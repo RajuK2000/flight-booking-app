@@ -1,0 +1,73 @@
+
+
+.sectionContainer{
+    width:100% auto;
+    padding: 1.5rem;
+    border: 2px solid gray;
+    border-radius: 16px;
+    row-gap: 2rem;
+}
+.btns{
+    background-color: aliceblue;
+    padding: .5rem;
+    border-radius: 1rem;
+    flex-direction: row;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    width: 40%;
+}
+.singleBtn{
+    padding: .8rem 1.5rem;
+    font-size: 13px;
+    border-radius: 3rem;
+    text-align: center;
+}
+.singleBtn:hover{ 
+    width: auto;
+    background-color: blue;
+    color: white;
+    font-weight: 500;
+    transition: .4s ease;
+}
+.singleBtn:active{
+    border-color: green;
+    color: white;
+    font-weight: 500;
+}
+.searchInputs{
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+.iconDiv{
+    padding: 16px 10px;
+    border-radius: 3rem;
+    background-color: azure;
+    margin-right: 1rem;
+    z-index: -1;
+}
+.icon{
+  color: black;
+  opacity: .7;
+  
+}
+h4{
+    padding-top: 0;
+    padding-bottom: .7rem;
+    color: black;
+    font-weight: 700;
+}
+input{
+    width: 95%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+input::placeholder{
+    font-size: 12px;
+    opacity:.5;
+   
+}

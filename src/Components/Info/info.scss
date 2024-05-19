@@ -1,0 +1,51 @@
+.info{
+    background-color: rgb(181, 202, 209);
+    .infoContainer{
+        .titleDiv{
+            flex-direction: column;
+            // text-align: center;
+            gap: 1.5rem;
+            justify-content: space-between;
+        }
+        .cardsDiv{
+            display: flex;
+            margin-top: 3rem;
+
+            .singleCard{
+                background: white;
+                padding: 3rem 2rem;
+                border-radius: 10rem;
+                gap: 1rem;
+                text-align: center;
+                margin: auto;
+                height: 320px;
+                width: 90%;
+                max-width: 250px;
+
+                .iconDiv{
+                    justify-content: center;
+                    margin: auto;
+                    background: green;
+                    width:max-content ;
+                    padding: 1rem;
+                    border-radius: 3rem;
+
+                    .icon{
+                        color: white;
+                    }
+                }
+
+                .cardTitle{
+                    color: black;
+                    font-weight: 700;
+                }
+                .colorOne{
+                    background: orange;
+                }
+                .colorTwo{
+                    background: rgb(219, 164, 61);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+
+
+@import url("http://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=spartan:wght@300;400;500&display=swap");
+
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'spartan',sans-serif;
+}
+
+
+body{
+    background-color: white;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    justify-content: space-evenly;
+}
+.section{
+    padding: 4rem 0 2rem;
+}
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.icon{
+    font-size: 1.3rem;
+    cursor:pointer;
+}
+
+.flex{
+   display: flex; 
+   align-items: center;
+}
+.grid{
+    display: grid; 
+    align-items: center;
+ }
+
+ .btn{
+    padding: .3rem 1.3rem;
+    background: blue;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    color: white;
+    
+ }
+ a{
+    color: white;
+    font-weight: 500;
+}
+.btn:hover{
+    background:pink;
+}
+ img,video{
+    width: 100%;
+    height: auto;
+ }
+ input{
+    font-size: 100%;
+    color: gray;
+ }
+ p{
+    font-size: 20px;
+    color: gray;
+    line-height: 22px;
+ }
+ h4{
+    padding: 1rem 0;
+    font-weight: 700;
+    color:black;
+ }
+ h2{
+    font-size:25px ;
+    padding: 1rem 0;
+    color:black;
+ }
