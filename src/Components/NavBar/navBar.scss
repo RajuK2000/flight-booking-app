@@ -1,0 +1,175 @@
+ 
+.navBar{
+    position: fixed;
+    flex-direction: row;
+    width: 100%;
+    z-index: 1000;
+    .navBarOne,.navBarTwo{
+       justify-content:space-between;
+       padding: 1rem;
+       width: 100%; 
+    }
+    .navBarOne{
+        background: lightblue;
+        .icon:hover{
+         color: lightcyan;
+        }
+        .atb{
+            gap:1rem;
+            span{
+               color: black;
+                font-size: 15px;
+                font-weight: 600;
+                cursor: pointer;
+                &:hover{
+                    color: lightblue;
+                    font-size: 700;
+                }
+            }
+            }
+    }
+    .navBarTwo{
+        justify-content: space-between;
+        top:3rem;
+        padding: .5rem;
+        position: fixed;
+        transition: .3s ease-in-out;
+        display: flex;
+        .logoDiv{
+            .logo{
+                width: 25%;
+            }
+        }
+        .navBarMenu{
+            .menu{
+                display: flex;
+                gap: 1rem;
+            }
+        }
+        @media screen and ( max-width:760px ) {
+            .navBarMenu{
+                position: absolute;
+                background-color: aliceblue;
+                padding: 1.5rem;
+                border-radius: 10px;
+                top:5rem;
+                right: -50%;
+                width: 60%;
+                transform: translateX(50%);
+                z-index: 2000;
+                box-shadow: 1px 1px 1px;
+                border: 2px solid white;
+                transition: .4S ease-in-out;
+                .menu{
+                    flex-direction: column;
+                    gap: .5rem 0;
+                    text-align: center;
+                    .listItems{
+                        padding: .5rem 0;
+                        cursor: pointer;
+                        color: black;
+                        &:hover{
+                            color: rgb(68, 118, 161);
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .btnOne{
+                    display: block;
+                    justify-content: center;
+                    margin: auto;
+                    margin-top: 1rem;
+                }
+            }
+        }
+        .toggleIcon{
+            .icon{
+                visibility: visible;
+                font-size: 40px;
+                color:black;
+            }
+        }
+        .showNavBar{
+            right: 50%;
+            transition: .4s ease-in-out;
+        }
+    }
+    .navbar_Bg{
+        background-color:lightblue ;
+        padding: .5rem 1rem;
+    }
+}
+
+@media screen and (min-width:768px){
+    .navBar{
+       align-items: center;
+    }
+    .navBarOne .none{
+        display: flex;
+        gap: 1.5rem;
+    }
+    li{
+        font-size: 13px;
+        gap: .5rem;
+        color:rgb(16, 12, 12);
+        &:hover{
+           color: antiquewhite;
+           text-decoration: underline;
+        }
+    }
+    .navBarTwo{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logoDiv .logo{
+         max-width: 30%;
+    }
+    .menu{
+        flex-direction: row;
+    }
+    .toggleIcon{
+        display: none;
+    }
+    .listItems{
+        padding: 0.5rem;
+        font-size: 20px;
+        cursor: pointer;
+        color: black;
+        font-weight: 700;
+        &:hover{
+            font-weight: 700;
+            color: antiquewhite;
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .navBar{
+        .navBarOne{
+            padding: .8rem 3rem;
+        }
+        .navBarTwo{
+        padding: 0rem 2rem;
+        .logoDiv .logo{
+            max-width: 40%;
+        }
+       } 
+    }
+}
+@media screen and (min-width:1332px) {
+    .navBar{
+       .navBarTwo{
+        .menu{
+            gap:1rem;
+            .listItems{
+                padding: 0 1rem;
+                font-size: 20px;
+            }
+        }
+       } 
+    }
+}
+
+        
+        
+        

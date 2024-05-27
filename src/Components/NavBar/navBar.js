@@ -3,40 +3,50 @@ import { BsPhoneVibrate } from "react-icons/bs"
 import { SiConsul } from "react-icons/si"
 import flight from "../../Media/flight.png"
 import { CgMenuGridO } from "react-icons/cg"
-import "./navBar.css"
+import "./navBar.scss"
 import { useState } from "react"
 
 
 const NavBar=()=>{
 const [active,setActive]=useState("navBarMenu")
+const [noBg,setaddBg]=useState("navBarTwo")
 
    const showNavbar=()=>{
     setActive("navBarMenu showNavBar")
    }
    const removeNavbar=()=>{
-    setActive("navBarMenu showNavBar")
+    setActive("navBarMenu")
    }
+  
+   const addBgColor=()=>{
+    if(window.scrollY >= 10){
+    setaddBg("navBarTwo navbar_Bg")
+    }else{
+     setaddBg("navBarTwo")
+    }
+   }
+   window.addEventListener("scroll",addBgColor)
 
     return(
-      <div className="nav">
-        <div className="navBarOne">
+      <div className="navBar">
+        <div className="navBarOne flex">
             <div>
-            <SiConsul/>
+            <SiConsul className="icon"/>
             </div>
-            <div className="none">
+            <div className="none flex">
                 <li className="flex"><BsPhoneVibrate className="icon"/>Support</li>
                 <li className="flex"><AiOutlineGlobal className="icon"/>Languages</li>
             </div>
-            <div className="atb">
+            <div className="atb flex">
                 <span>Sign In</span>
                 <span>Sign Out</span>
 
             </div>
         </div>
 
-        <div className="navBarTwo">
+        <div className={noBg}>
           <div className="logoDiv">
-            <img src={flight} alt="" className="logo" />
+            <img src={flight} alt="Flight" className="logo" />
           </div> 
          
          <div className={active}>
@@ -46,10 +56,11 @@ const [active,setActive]=useState("navBarMenu")
             <li onClick={removeNavbar} className="listItems" >Offers</li>
             <li onClick={removeNavbar} className="listItems" >Seats</li>
             <li onClick={removeNavbar} className="listItems" >Distanations</li>
+            <li onClick={removeNavbar} className="listItems" >Contact</li>
+            {/* <button className="btn flex btnOne">Contact</button> */}
           </ul>
-          <button className="btn flex btnOne">Contact</button>
+          
           </div>
-          {/* <button className="btn flex btnTwo">Contact</button> */}
          <div onClick={showNavbar} className="toggleIcon"><CgMenuGridO className="icon"/> </div>
         </div>
        

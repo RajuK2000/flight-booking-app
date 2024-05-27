@@ -24,9 +24,11 @@ li{
     justify-content: space-evenly;
 }
 .section{
-    padding: 4rem 0 2rem;
+   width: 100%;
+    padding: 2rem 0 2rem;
 }
 .container{
+   width: 100%;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
@@ -55,8 +57,11 @@ li{
     
  }
  a{
-    color: white;
+    color: rgb(69, 69, 210);
     font-weight: 500;
+}
+.none{
+    display: none;
 }
 .btn:hover{
     background:pink;
@@ -71,7 +76,7 @@ li{
  }
  p{
     font-size: 20px;
-    color: gray;
+    color: green;
     line-height: 22px;
  }
  h4{
@@ -83,4 +88,38 @@ li{
     font-size:25px ;
     padding: 1rem 0;
     color:black;
+ }
+
+ @media screen and (min-width:1024px) {
+    p{
+        font-size: 20px;
+        line-height: 25px;
+     }
+     h4{
+      font-size: 20px;
+     }
+     h2{
+        font-size:27px;
+     }
+     .container{
+     width: 90%;
+     margin: auto;
+    }
+    .section{
+        padding: 1rem 0 4rem;
+    }    
+ }
+
+ ::selection{
+    background: green;
+    color: aliceblue;
+ }
+ ::-webkit-scrollbar{
+    width: 10px;
+    color: gray;
+ }
+ ::-webkit-scrollbar-thumb{
+    background: blue;
+    border: 10px;
+    border-radius: 10px;
  }

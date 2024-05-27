@@ -1,0 +1,135 @@
+
+
+.travelers{
+    .sectionContainer{
+        text-align: center;
+        .travelersContainer{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top:1rem ;
+            gap: 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            .singleTraveler{
+                z-index: -1;
+                position: relative;
+                height: 350px;
+                width: 85%;
+                max-width: 250px;
+                overflow: hidden;
+                border-radius: 10rem;
+                gap: 1rem;
+                margin: auto;
+                .destinationImage,.travelerImage,.travelerName{
+                          position: absolute;
+                }
+                .destinationImage{
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+                    object-fit: cover;
+                }
+                .travelerImage{
+                    height: 50px;
+                    width: 50px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    bottom: 30px;
+                    left: 40%;
+                    transform: translateX(-50%);
+                    border:5px solid rgba($color: #a4d9eb, $alpha: 1.0) ;
+                    transition:.4s ease-in-out;
+                    animation: animated 2.3s infinite;
+
+                }
+                @keyframes animated {
+                    0%{
+                        transform: translateY(0px);
+                    }
+                    50%{
+                        transform: translateY(20px);
+                    }
+                    100%{
+                        transform: translateY(0px);
+                    }
+                
+                }
+            }
+            .travelerName{
+                bottom: -100%;
+                width: 100%;
+                height: max-content ;
+                background-color: lightblue;
+                opacity: .9;
+                border-radius: 20%;
+                padding: 1.3rem 1rem;
+                transition:.4s ease-in-out ;
+                animation: animatedBorders 2.3s infinite ;
+
+                span{
+                    display: block;
+                    color: black;
+                    font-weight: 700;
+                }
+                p{
+                    color: #4b9db8;
+                    font-style: italic;
+                }
+            }
+            @keyframes animatedBorders {
+                0%{
+                    border-radius: 0rem;
+                }
+                50%{
+                    border-radius: 5rem;
+                }
+                100%{
+                    border-radius: 5rem;
+                }
+            }
+            &:hover{
+                .travelerName{
+                    bottom: 0;
+                    transition: 1s ease-in-out;
+                }
+                .travelerImage{
+                    bottom: 130px;
+                    transition: 1s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:480px) {
+    .travelers{
+        .sectionContainer{
+            .travelersContainer{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+               } 
+        }
+    }   
+}
+@media screen and (min-width:760px) {
+    .travelers{
+        .sectionContainer{
+            .travelersContainer{
+                grid-template-columns: repeat(3,1fr);
+               } 
+        }
+    }   
+}
+@media screen and (min-width:960px) {
+    .travelers{
+        .sectionContainer{
+            .travelersContainer{
+                grid-template-columns: repeat(4,1fr);
+                margin: 3rem 0;
+               } 
+        }
+    }   
+}

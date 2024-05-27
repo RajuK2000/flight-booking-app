@@ -3,14 +3,15 @@
     .infoContainer{
         .titleDiv{
             flex-direction: column;
-            // text-align: center;
             gap: 1.5rem;
             justify-content: space-between;
         }
         .cardsDiv{
             display: flex;
             margin-top: 3rem;
-
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 2rem;
             .singleCard{
                 background: white;
                 padding: 3rem 2rem;
@@ -21,7 +22,6 @@
                 height: 320px;
                 width: 90%;
                 max-width: 250px;
-
                 .iconDiv{
                     justify-content: center;
                     margin: auto;
@@ -34,7 +34,6 @@
                         color: white;
                     }
                 }
-
                 .cardTitle{
                     color: black;
                     font-weight: 700;
@@ -48,4 +47,47 @@
             }
         }
     }
+}
+@media screen and (min-width:480px) {
+    .info{
+        .infoContainer{
+            .cardsDiv{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                gap: 2rem;
+               } 
+        }
+    }  
+}
+@media screen and (min-width:570px) {
+    .info{
+        .infoContainer{
+            .titleDiv{
+               flex-direction: row;
+               } 
+               .cardsDiv{
+                grid-template-columns: repeat(2,1fr);
+               }
+        }
+    }   
+}
+@media screen and (min-width:760px) {
+    .info{
+        .infoContainer{
+            padding: 0 6rem;
+            .titleDiv{
+             width: 90%;
+             margin: auto;
+             align-items: center;
+               } 
+               .cardsDiv{
+                grid-template-columns: repeat(3,1fr);
+                .singleCard{
+                    max-width: 260px;
+                    padding: 3rem 1rem;
+                    
+                }
+               }
+        }
+    }   
 }

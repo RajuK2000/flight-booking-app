@@ -1,4 +1,4 @@
-import './main.css';
+ import './main.css';
 import Footer from './Components/Footer/footer';
 import Home from './Components/Home/home';
 import Info from './Components/Info/info';
@@ -8,20 +8,22 @@ import Search from './Components/Search/search';
 import Subscribe from './Components/Subcribers/Subcribe';
 import Support from './Components/Support/support';
 import Travelars from './Components/Travelers/travelers';
+// import Singup from './Forms/signUp';
 
 
 function App() {
   return (
     <>
   <NavBar/>
- <Home/>
-    <Search/>
-  {/* <Language/>
-  <Subscribe/> */}
+  <Home/>
+  <Search/>
   <Support/>
-  {/* <Travelars/> */}
   <Info/>
-  {/* <Footer/> */}
+  <Language/>
+  <Travelars/>
+  <Subscribe/>
+  <Footer/>
+  {/* <Singup/> */}
   </>
   );
 }

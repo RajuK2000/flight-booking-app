@@ -2,12 +2,18 @@ import "./search.css"
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlinePersonPinCircle } from "react-icons/md";
 import { FaRegCalendarAlt } from "react-icons/fa";
-
+import Aos from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react";
 
 const Search=()=>{
+  useEffect(()=>{
+   Aos.init({duration:2000})
+  },[])
+
     return(
        <div className="search container section">
-        <div className="sectionContainer">
+        <div  data-aos="fade-up" data-aos-duration="2500" className="sectionContainer">
 
             <div className="btns flex">
                 <div className="singleBtn">
@@ -21,14 +27,24 @@ const Search=()=>{
                 </div>
             </div>
 
-            <div className="searchInputs flex">
+            <div  data-aos="fade-up" data-aos-duration="2500" className="searchInputs flex">
 
                 <div className="singleInput flex">
                     <div className="iconDiv">
                     <CiLocationOn className="icon"/>
                     </div>
                     <div className="texts">
-                        <h4>Location</h4>
+                        <h4>From-Location</h4>
+                        <input type="search" placeholder="Where do you want to go ?"/>
+                    </div>
+                </div>
+
+                <div className="singleInput flex">
+                    <div className="iconDiv">
+                    <CiLocationOn className="icon"/>
+                    </div>
+                    <div className="texts">
+                        <h4>To-Location</h4>
                         <input type="search" placeholder="Where do you want to go ?"/>
                     </div>
                 </div>
@@ -39,7 +55,7 @@ const Search=()=>{
                     </div>
                     <div className="texts">
                         <h4>Travelers</h4>
-                        <input type="text" placeholder="Add guests"/>
+                        <input type="number" placeholder="Add guests"/>
                     </div>
                 </div>
             
@@ -63,7 +79,7 @@ const Search=()=>{
                     </div>
                 </div>
 
-                <button className="btn buttonBlock flex">Search Flight</button>
+                <button className="btns">Search Flight</button>
 
 
             </div>    
