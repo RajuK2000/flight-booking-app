@@ -19,10 +19,18 @@
     text-align: center;
     justify-content: center;
 }
+.btn1{
+    background-color: rgba(230, 0, 255, 0.2);
+    font-weight: 700;
+    padding: 5px;
+    width: fit-content;
+    border-radius: .5rem;
+    cursor: pointer;
+}
 
 .singleBtn{
     padding: .8rem 1.5rem;
-    font-size: 13px;
+    /* font-size: 13px; */
     border-radius: 3rem;
     text-align: center;
 }
@@ -39,11 +47,8 @@
     font-weight: 500;
 }
 .searchInputs{
-    display: flex;
-    width: 100%;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     gap: 1.5rem;
     padding: 1rem;
     display: grid;
@@ -58,7 +63,6 @@
 }
 .icon{
   color: black;
-  
 }
 h4{
     padding-top: 0;
@@ -81,7 +85,6 @@ input::placeholder{
    .searchInputs{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-
     }
     .btns{
         display: flex;
@@ -100,12 +103,6 @@ input::placeholder{
  }
  @media screen and (min-width:680px){
   
-    .btn{
-      height: auto;
-      width: auto;
-      border-radius:3rem;
-      flex-direction: row;
-    }
     .searchInputs{
         grid-template-columns: repeat(3,1fr);
     }

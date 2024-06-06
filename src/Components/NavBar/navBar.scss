@@ -3,6 +3,7 @@
     position: fixed;
     flex-direction: row;
     width: 100%;
+    height: fit-content;
     z-index: 1000;
     .navBarOne,.navBarTwo{
        justify-content:space-between;
@@ -32,7 +33,6 @@
         justify-content: space-between;
         top:3rem;
         padding: .5rem;
-        position: fixed;
         transition: .3s ease-in-out;
         display: flex;
         .logoDiv{
@@ -69,7 +69,7 @@
                         cursor: pointer;
                         color: black;
                         &:hover{
-                            color: rgb(68, 118, 161);
+                            color:rgb(195, 112, 155);
                             font-weight: 700;
                         }
                     }
@@ -100,7 +100,7 @@
     }
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:760px){
     .navBar{
        align-items: center;
     }
@@ -108,15 +108,15 @@
         display: flex;
         gap: 1.5rem;
     }
-    li{
-        font-size: 13px;
-        gap: .5rem;
-        color:rgb(16, 12, 12);
-        &:hover{
-           color: antiquewhite;
-           text-decoration: underline;
-        }
-    }
+    // li{
+    //     font-size: 13px;
+    //     gap: .5rem;
+    //     color:rgb(16, 12, 12);
+    //     &:hover{
+    //        color: antiquewhite;
+    //        text-decoration: underline;
+    //     }
+   // }
     .navBarTwo{
         justify-content: space-between;
         align-items: center;
@@ -136,10 +136,7 @@
         cursor: pointer;
         color: black;
         font-weight: 700;
-        &:hover{
-            font-weight: 700;
-            color: antiquewhite;
-        }
+       
     }
 }
 

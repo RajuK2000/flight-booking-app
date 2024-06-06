@@ -5,6 +5,7 @@ import flight from "../../Media/flight.png"
 import { CgMenuGridO } from "react-icons/cg"
 import "./navBar.scss"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 
 const NavBar=()=>{
@@ -51,12 +52,17 @@ const [noBg,setaddBg]=useState("navBarTwo")
          
          <div className={active}>
           <ul className="menu">
-            <li onClick={removeNavbar} className="listItems" >Home</li>
-            <li onClick={removeNavbar} className="listItems" >About</li>
-            <li onClick={removeNavbar} className="listItems" >Offers</li>
-            <li onClick={removeNavbar} className="listItems" >Seats</li>
-            <li onClick={removeNavbar} className="listItems" >Distanations</li>
-            <li onClick={removeNavbar} className="listItems" >Contact</li>
+            <li onClick={removeNavbar} >
+              <Link to="/" className="listItems" >Home</Link></li>
+            <li onClick={removeNavbar} >
+            <Link to="/About" className="listItems" >About</Link></li>
+            <li onClick={removeNavbar}>
+            <Link to="/Offers" className="listItems" >Offers</Link>
+            </li>
+            <li onClick={removeNavbar} >
+            <Link to="/Destinations" className="listItems" >Destinations</Link></li>
+            <li onClick={removeNavbar} >
+            <Link to="/Contact" className="listItems" >Contact</Link></li>
             {/* <button className="btn flex btnOne">Contact</button> */}
           </ul>
           
