@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/flight-booking-app/static/css/main.85ba7eb2.css",
+    "main.js": "/flight-booking-app/static/js/main.11fc50d7.js",
+    "static/js/453.ebdd8d34.chunk.js": "/flight-booking-app/static/js/453.ebdd8d34.chunk.js",
+    "static/media/skyVideo.mp4": "/flight-booking-app/static/media/skyVideo.96c7f1a2a84eab91ace1.mp4",
+    "static/media/window.jpg": "/flight-booking-app/static/media/window.ecfc223e0cb7ecec2a8b.jpg",
+    "static/media/person.jpeg": "/flight-booking-app/static/media/person.eec3cdacfcbd04e1ccf5.jpeg",
+    "static/media/paris.png": "/flight-booking-app/static/media/paris.758ca0c67eb4b30eb3eb.png",
+    "static/media/support.jpg": "/flight-booking-app/static/media/support.638d6bf2663c09614438.jpg",
+    "static/media/takeOff.png": "/flight-booking-app/static/media/takeOff.7458bf93fe812a292af7.png",
+    "static/media/person2.jpeg": "/flight-booking-app/static/media/person2.405c51dbb1579511e793.jpeg",
+    "static/media/flight.png": "/flight-booking-app/static/media/flight.d36f9a5048ef5c99c4ed.png",
+    "static/media/indianGate.jpeg": "/flight-booking-app/static/media/indianGate.a05dff2d185d19216bb7.jpeg",
+    "index.html": "/flight-booking-app/index.html",
+    "main.85ba7eb2.css.map": "/flight-booking-app/static/css/main.85ba7eb2.css.map",
+    "main.11fc50d7.js.map": "/flight-booking-app/static/js/main.11fc50d7.js.map",
+    "453.ebdd8d34.chunk.js.map": "/flight-booking-app/static/js/453.ebdd8d34.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85ba7eb2.css",
+    "static/js/main.11fc50d7.js"
+  ]
+}
