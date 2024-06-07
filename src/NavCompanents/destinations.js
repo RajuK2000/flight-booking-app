@@ -5,7 +5,7 @@ const Destinations=()=>{
     return(
         <>
         <NavBar/>
-        <Footer/>
+        {/* <Footer/> */}
         </>
     )
 }

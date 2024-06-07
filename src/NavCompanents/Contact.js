@@ -7,7 +7,7 @@ const Contact=()=>{
         <>
         <NavBar/>
     
-        <Footer/>
+        {/* <Footer/> */}
         </>
         
     )

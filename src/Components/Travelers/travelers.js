@@ -3,6 +3,10 @@ import paris from "../../Media/paris.png"
 import person from "../../Media/person.jpeg"
 import person2 from "../../Media/person2.jpeg"
 import IndGate from "../../Media/indianGate.jpeg"
+import dubai from "../../Media/dubai.jpeg"
+import dubaiPerson from "../../Media/dubaiPerson.jpeg"
+import japan from "../../Media/japan.jpg"
+import japanPerson from "../../Media/japanPerson.jpg"
 import Aos from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from "react"
@@ -13,29 +17,29 @@ const travelers=[
         id:1,
         destinationImage: paris,
         travelerImage:person ,
-        travelerName:"Rajukumar" ,
-        socialLink: "@rajuk2000"
+        travelerName:"Alian" ,
+        socialLink: "@Alian@yy201"
     },
     {
         id:2,
         destinationImage: IndGate,
         travelerImage:person2 ,
-        travelerName:"Raju" ,
-        socialLink: "@rajiv2000"
+        travelerName:"Rajiv" ,
+        socialLink: "@Rajiv12"
     },
     {
         id:3,
-        destinationImage: paris,
-        travelerImage:person ,
-        travelerName:"Rajukumar" ,
-        socialLink: "@rajuk2000"
+        destinationImage: japan,
+        travelerImage:japanPerson,
+        travelerName:"Khufua" ,
+        socialLink: "@Kuku5210"
     },
     {
         id:4,
-        destinationImage: paris,
-        travelerImage:person,
-        travelerName:"Rajukumar" ,
-        socialLink: "@rajuk2000"
+        destinationImage: dubai,
+        travelerImage:dubaiPerson,
+        travelerName:"AliKhan" ,
+        socialLink: "@Alik%420"
     }
 ]
 const Travelars=()=>{

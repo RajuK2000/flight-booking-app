@@ -7,7 +7,7 @@ const About=()=>{
     return(
         <>
         <NavBar/>
-        <Footer/>
+        {/* <Footer/> */}
         </>
         
     )

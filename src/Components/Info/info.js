@@ -34,7 +34,7 @@ const Info=()=>{
                         <BsShieldCheck className="icon"/>
                         </div>
                         <span className="cardTitle">Smart Checklist</span>
-                        <p>You can also call airlines from your phone and book tickets!</p>
+                        <p>You can easily check the various services for it is using your phone!</p>
                     </div>
 
                     <div data-aos="fade-up" data-aos-duration="2500" className="singleCard grid">
@@ -42,7 +42,7 @@ const Info=()=>{
                         <CiBookmarkCheck className="icon"/>
                         </div>
                         <span className="cardTitle">Save More</span>
-                        <p>You can also call airlines from your phone and book tickets!</p>
+                        <p>You are save more details  for Our services plece use Airline services!</p>
                     </div>
                 </div>
             </div>

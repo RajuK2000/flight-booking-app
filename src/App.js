@@ -1,14 +1,20 @@
- import './main.css';
-import NavPath from './NavCompanents/navigationPaths';
-import Singup from './Forms/signUp';
+ import SignIn from './Forms/signIn';
+import SignUp from './Forms/signUp';
+import './main.css';
+// import NavPath from './NavCompanents/navigationPaths';
+
 
 
 function App() {
   return (
     <>
+    {
+     alert("<--This web site is Not complete. Under Processing-->")
+    }
     <NavPath/>
-  
-  {/* <Singup/> */}
+    <SignIn/>
+    <SignUp/>
+
   </>
   );
 }
