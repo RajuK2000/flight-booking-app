@@ -1,0 +1,107 @@
+.Container{
+    margin-top: 10px;
+    text-align: center;
+    .heding{
+        text-align: center;
+        color:rgb(105, 64, 64);
+    }
+    .Cards{
+        height: max-content;
+        border: 2px solid;
+        border-radius: 5%;
+        padding: 10px;
+        margin: 2% 5% 5% 5%;
+        gap:10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .image{
+            border-radius: 5%;
+        }
+        .star{
+            color:black;
+            :hover{
+                transform: scale(1.2);
+                transition: .2s ease-in;
+            }
+        }
+        .viewbt{
+            padding: 2%;
+            font-weight: 700;
+            background-color:lightblue;
+            border-radius: 5px;
+        }
+    }
+    .container1{
+        .grid-imgs{
+            display: grid;
+            grid-template-columns: repeat(2,45vw);
+            justify-content: space-evenly;
+            padding-top: 2px;
+            .item1,.item4{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            }
+            .item1,.item2,.item3,.item4,.item5,.item6,.item7{
+                  border: 2px solid;
+                  padding: 2%;
+                  margin: 5px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+            }
+            .viewbt{
+                padding: 2%;
+                font-weight: 700;
+                background-color:lightblue;
+                border-radius: 5px;
+            }
+            .item7{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:420px) {
+    .Container{
+        .card-grid{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .Cards{
+            width: 40vw;
+            margin: 2% 0% 3% 0%;
+        }
+    }
+}
+@media screen and (min-width:800px) {
+    .Container{
+        .Cards{
+            width: 32vw;  
+        }
+        .container1{
+            .grid-imgs{
+            grid-template-columns: repeat(3,32vw);
+            .item7{
+                display: block;
+                grid-column-start: 2;
+                grid-column-end: 4;
+            }
+            .item4,.item1{
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            .item1{
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+            .item4{
+                grid-column-start: 2;
+                grid-column-end: 3;
+            }
+        }
+    }
+    }
+}

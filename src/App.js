@@ -1,5 +1,5 @@
 //  import SignIn from './Forms/signIn';
-// import SignUp from './Forms/signUp';
+import SignUp from './Forms/signUp';
 import './main.css';
 import NavPath from './NavCompanents/navigationPaths';
 
