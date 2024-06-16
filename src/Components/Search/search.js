@@ -121,7 +121,7 @@ const Search=()=>{
                     <span onClick={()=>{setClasses("business")}}>Businnes Class</span>
                 </div>
                 <div className="singleBtn">
-                    <span onClick={()=>{setClasses("first")}}>Fisrt Class</span>
+                    <span onClick={()=>{setClasses("first")}}>First Class</span>
                 </div>
             </div>
 
@@ -199,11 +199,8 @@ const Search=()=>{
                         onChange={(e)=>{setToDate(e.target.value)}}/>
                     </div>
                 </div>
-
-                <button className="btn1" onClick={GetData}>Search Flight</button>
-
-
-            </div>    
+            </div>   
+            <button className="btn1" onClick={GetData}>Search Flight</button> 
         </div>
        </div>
     )

@@ -50,9 +50,7 @@
             .menu{
                 display: flex;
                 gap: 1rem;
-                .listItems{
-                    // color: black;
-                }
+
             }
         }
         @media screen and ( max-width:760px ) {
@@ -138,7 +136,7 @@
         font-size: 20px;
         cursor: pointer;
         color: aliceblue;
-        font-weight: 800;   
+        font-weight: 700;   
     }
 }
 

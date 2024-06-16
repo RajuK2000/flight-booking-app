@@ -1,10 +1,12 @@
 .info{
-    background-color: rgb(181, 202, 209);
     .infoContainer{
+        border: 2px solid rgb(181, 170, 170); 
+        padding: 20px;
+        border-radius: 10px;
         .titleDiv{
-            flex-direction: column;
-            gap: 1.5rem;
-            justify-content: space-between;
+            .head{
+             color: rgb(81, 38, 38);
+            }
         }
         .cardsDiv{
             display: flex;
@@ -12,16 +14,22 @@
             display: grid;
             grid-template-columns: repeat(1,1fr);
             gap: 2rem;
+            
             .singleCard{
-                background: white;
+                background: rgba(210, 199, 199, 0.5);
                 padding: 3rem 2rem;
-                border-radius: 10rem;
+                border-radius: 7rem;
+                box-shadow: 3px 3px 5px 2px;
                 gap: 1rem;
                 text-align: center;
                 margin: auto;
                 height: 320px;
                 width: 90%;
                 max-width: 250px;
+                &:hover{
+                    transform: scale(1.08);
+                    transition: 2s ease-in;
+                }
                 .iconDiv{
                     justify-content: center;
                     margin: auto;
@@ -35,14 +43,21 @@
                     }
                 }
                 .cardTitle{
-                    color: black;
+                    color: rgb(89, 44, 44);
                     font-weight: 700;
+                    font-size: 19px;
                 }
-                .colorOne{
-                    background: orange;
+                .col1{
+                    background: rgb(120, 90, 61);
                 }
-                .colorTwo{
-                    background: rgb(219, 164, 61);
+                .col2{
+                    background: rgb(100, 119, 53);
+                }
+                .col3{
+                    background: rgb(38, 80, 107);
+                }
+                .col4{
+                    background: rgb(125, 33, 111);
                 }
             }
         }
@@ -74,14 +89,14 @@
 @media screen and (min-width:760px) {
     .info{
         .infoContainer{
-            padding: 0 6rem;
             .titleDiv{
              width: 90%;
              margin: auto;
              align-items: center;
+             justify-content: center;
                } 
                .cardsDiv{
-                grid-template-columns: repeat(3,1fr);
+                grid-template-columns: repeat(2,1fr);
                 .singleCard{
                     max-width: 260px;
                     padding: 3rem 1rem;
@@ -90,4 +105,14 @@
                }
         }
     }   
+}
+@media screen and (min-width:1024px) {
+    .info{
+        .infoContainer{
+            .cardsDiv{
+                grid-template-columns: repeat(4,1fr);
+            }
+        }
+    }
+    
 }

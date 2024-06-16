@@ -10,18 +10,19 @@ const Language=()=>{
     },[])
     return(
         <div className="langue container section">
+            <div data-aos="fade-down" data-aos-duration="2500" className="textDiv">
+                    <h2 className="head">Unaccompanied Minor Lounge</h2>
+                </div>
             <div className="sectionContainer">
 
+            
+
                <div data-aos="fade-down" data-aos-duration="2500" className="imgDiv">
-                <img src={supportImg} alt=""/>
+                <img src={supportImg} alt="" className="image"/>
                 </div> 
 
                 <div className="grids grid">
                     
-                <div data-aos="fade-down" data-aos-duration="2500" className="textDiv">
-                    <h2>Unaccompanied Minor Lounge</h2>
-                </div>
-
                 <div className="ToBlocks">
                     <div className="block1">
                     <div data-aos="fade-down" data-aos-duration="2500" className="singleGrid">

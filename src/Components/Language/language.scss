@@ -1,14 +1,23 @@
 .langue{
+  border: 2px solid rgb(102, 100, 100);
+  border-radius: 10px;
+  text-align: center;
+  .textDiv{
+    .head{
+      color: rgb(56, 9, 30);
+    }
+  }
     .sectionContainer{
+      text-align: start;
+      border: none;
        gap:1.5rem;
        justify-content:center;
        display: grid;
        grid-template-columns: repeat(1,1fr);  
        .imgDiv{
-         margin: auto;
-         img{
+         .image{
             width: 100%;
-            max-width: 430px;
+            border-radius: 3rem;
          }
        }
         .grids{
@@ -16,18 +25,19 @@
             .ToBlocks{
             .singleGrid{
                 .gridTitle{
-                  display: block;
+                  display: grid;
                   padding-bottom: 1rem; 
                   padding-top: 1rem;
                   font-weight: 700;
                   font-size: 20px;
-                  color:black; 
+                  color:rgb(56, 9, 30); 
                 }
             }
           }
         }
        .ToBlocks{
-        display: flex;  
+        display: flex; 
+        flex-direction: column; 
         padding: 1rem;
     }  
     }
@@ -45,6 +55,11 @@
 @media screen and (min-width:570px) {
   .langue{
       .sectionContainer{
+        .imgDiv{
+          .image{
+            width: 90%;
+          }
+        }
           .textDiv{
             .grids{
               grid-template-columns: repeat(2,1fr); 

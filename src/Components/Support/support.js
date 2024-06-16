@@ -1,9 +1,10 @@
 import "./support.scss"
-import Window from "../../Media/window.jpg" 
-import Flight from "../../Media/takeOff.png"
+import Window from "../../Media/wind.jpg" 
+// import Flight from "../../Media/takeOff.png"
 import Aos from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from "react"
+import dub from "../../Media/dub.jpg"
 
 const Support=()=>{
     useEffect(()=>{
@@ -14,8 +15,8 @@ const Support=()=>{
             <div className="sectionContainer">
               <div className="titileDiv">
                 <small>Travel support</small>
-                <h2>Plane your travel with Confidence</h2>
-                <p>find help with booking and travel plans, see what to along the journey!</p>
+                <h2 className="head">Plane your travel with Confidence</h2>
+                <p>Find help with booking and travel plans, See what to along the journey!</p>
               </div>
           
               <div className="infoDiv grid">
@@ -47,9 +48,9 @@ const Support=()=>{
                  </div>
 
                 <div data-aos="fade-up" data-aos-duration="4500" className="imgDiv">
-                    <img src={Window} alt="" className="img1"/>
-                    <img src={Window} alt="" className="img2"/>
-                    <img src={Window} alt="" className="img3"/>
+                    <img src={dub} alt="" className="img1"/>
+                    <img src={dub} alt="" className="img2"/>
+                    <img src={dub} alt="" className="img3"/>
                     
                 </div>
 

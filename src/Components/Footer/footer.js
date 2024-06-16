@@ -1,6 +1,6 @@
 import React from "react"
 import "./footer.scss"
-import logo from "../../Media/flight.png"
+// import logo from "../../Media/flight.png"
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
@@ -25,7 +25,7 @@ const Footer=()=>{
                         {/* <img src={logo} className="Logo" alt=""/> */}
                         <SiTurkishairlines className="Logo"/>
                     </div>
-                    <p>Your mind should be stronger than your feelings,fly!</p>
+                    <p className="quote">Your mind should be stronger than your feelings,fly!</p>
                     <div className="socialIcon flex">
                     <FaFacebook className="icon"/>
                     <FaSquareXTwitter className="icon"/>

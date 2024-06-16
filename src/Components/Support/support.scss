@@ -2,6 +2,9 @@
     .sectionContainer{
         .titileDiv{
           text-align: center;
+          .head{
+            color: rgb(56, 9, 30);
+          }
           small{
             letter-spacing: .8rem;
             text-transform: uppercase;
@@ -45,26 +48,27 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+            justify-content: flex-start;
             margin: auto;
-            width: 40%;
+            max-width: 40%;
             .img1,.img2,.img3{
                 max-width:420px;
                 border-radius: 40%;
             }
             .img1{
                 position: relative;
-                bottom: 3vh;
+                bottom: 3vw;
                 z-index: 1; 
             }
             .img2{
                 position: relative;
-                top: 4vh;
-                right: 19vh;
+                top: 4vw;
+                right: 45vw;
             }
             .img3{
                 position: relative;
-                top: 3vh;
-                right: 18vh;
+                top: 3vw;
+                right: 45vw;
                 z-index: 2;
             }
         }
@@ -74,39 +78,56 @@
         .support{
             .sectionContainer{
                 .imgDiv{
-                    .img1,.img2,.img3{
-                        max-width:420px;
-                        border-radius: 40%;
-                    }
+                    
                     .img1{
                         position: relative;
-                        bottom: 0vh;
+                        bottom: 10vw;
                         z-index: 1; 
                     }
                     .img2{
                         position: relative;
-                        top: 4vh;
-                        right: 30vh;
+                        top: 3vw;
+                        right: 50vw;
                     }
                     .img3{
                         position: relative;
-                        top: 3vh;
-                        right: 30vh;
+                        top: 3vw;
+                        right: 40vw;
                         z-index: 2;
                     
                 }
+            }
                 .infoDiv{
                     display: grid;
                     grid-template-columns: repeat(1,1fr);
                   
                    }
-                 }
+                 
             }
         }   
     }
     @media screen and (min-width:570px) {
         .support{
             .sectionContainer{
+                .imgDiv{
+                    
+                    .img1{
+                        position: relative;
+                        bottom: 7vw;
+                        z-index: 1; 
+                    }
+                    .img2{
+                        position: relative;
+                        top: 3vw;
+                        right: 52vw;
+                    }
+                    .img3{
+                        position: relative;
+                        right: 45vw;
+                        z-index: 2;
+                    
+                }
+            }
                 .infoDiv{
                    .textDiv{
                     margin-top: 2rem;
@@ -120,6 +141,26 @@
     @media screen and (min-width:760px) {
         .support{
             .sectionContainer{
+                .imgDiv{
+                    
+                    .img1{
+                        position: relative;
+                        bottom: 10vw;
+                        z-index: 1; 
+                    }
+                    .img2{
+                        position: relative;
+                        top: 6vw;
+                        right: 7vw;
+                    }
+                    .img3{
+                        position: relative;
+                        top: 0vw;
+                        right: 45vw;
+                        z-index: 2;
+                    
+                }
+            }
                 .infoDiv{
                     grid-template-columns: repeat(2,1fr);
                     gap: 2rem;
@@ -140,18 +181,18 @@
                     
                     .img1{
                         position: relative;
-                        bottom: 3vh;
+                        bottom: 3vw;
                         z-index: 1; 
                     }
                     .img2{
                         position: relative;
-                        top: 4vh;
-                        right: 55vh;
+                        top: 2vw;
+                        right: 25vw;
                     }
                     .img3{
                         position: relative;
-                        top: 2vh;
-                        right: 50vh;
+                        top: 2vw;
+                        right: 25vw;
                         z-index: 2;
                     }
                 }
