@@ -1,6 +1,6 @@
 import { AiOutlineGlobal } from "react-icons/ai"
 import { BsPhoneVibrate } from "react-icons/bs"
-import { SiConsul } from "react-icons/si"
+import { SiConsul, SiTurkishairlines } from "react-icons/si"
 import flight from "../../Media/flight.png"
 import { CgMenuGridO } from "react-icons/cg"
 import "./navBar.scss"
@@ -47,7 +47,8 @@ const [noBg,setaddBg]=useState("navBarTwo")
 
         <div className={noBg}>
           <div className="logoDiv">
-            <img src={flight} alt="Flight" className="logo" />
+            {/* <img src={flight} alt="Flight" className="logo" /> */}
+            <SiTurkishairlines className="logo"/>
           </div> 
          
          <div className={active}>

@@ -12,22 +12,24 @@
        width: 100%; 
     }
     .navBarOne{
-        background: lightblue;
-        .icon:hover{
-         color: lightcyan;
+        background: rgba(0,20,25,0.9);
+        .icon{
+         color: rgb(103, 124, 124);
         }
         .atb{
             gap:1rem;
             span{
-               color: black;
+               color: lightblue;
                 font-size: 15px;
                 font-weight: 600;
                 cursor: pointer;
                 &:hover{
-                    color: lightblue;
-                    font-size: 700;
+                  font-size: 700;
                 }
             }
+            }
+            .flex{
+                color: aliceblue;
             }
     }
     .navBarTwo{
@@ -38,22 +40,28 @@
         display: flex;
         .logoDiv{
             .logo{
-                width: 30%;
+                font-size: 2rem;
+                color: aliceblue;
+                position: relative;
+                max-width: 100%;
             }
         }
         .navBarMenu{
             .menu{
                 display: flex;
                 gap: 1rem;
+                .listItems{
+                    // color: black;
+                }
             }
         }
         @media screen and ( max-width:760px ) {
             .navBarMenu{
                 position: absolute;
-                background-color: aliceblue;
-                padding: 1.5rem;
+                background-color: rgba(0,20,25,0.9);
+                padding: 3rem;
                 border-radius: 10px;
-                top:5rem;
+                top:6rem;
                 display: none;
                 transform: translateX(50%);
                 z-index: 2000;
@@ -62,12 +70,12 @@
                 transition: .4S ease-in-out;
                 .menu{
                     flex-direction: column;
-                    gap: .5rem 0;
+                    gap: .7rem 0;
                     text-align: center;
                     .listItems{
                         padding: .5rem 0;
                         cursor: pointer;
-                        color: black;
+                        color: rgb(202, 202, 222);
                         &:hover{
                             color:rgb(195, 112, 155);
                             font-weight: 700;
@@ -86,7 +94,7 @@
             .icon{
                 visibility: visible;
                 font-size: 40px;
-                color:black;
+                color:aliceblue;
             }
         }
         .showNavBar{
@@ -96,7 +104,7 @@
         }
     }
     .navbar_Bg{
-        background-color:lightblue ;
+        background: rgba(0,20,25,0.9);
         padding: .5rem 1rem;
     }
 }
@@ -114,7 +122,10 @@
         align-items: center;
     }
     .logoDiv .logo{
-         max-width: 30%;
+        position: relative;
+        top: 0px;
+         font-size: 2rem;
+         max-width: 100%;
     }
     .menu{
         flex-direction: row;
@@ -126,9 +137,8 @@
         padding: 0.5rem;
         font-size: 20px;
         cursor: pointer;
-        color: black;
-        font-weight: 700;
-       
+        color: aliceblue;
+        font-weight: 800;   
     }
 }
 
@@ -140,7 +150,8 @@
         .navBarTwo{
         padding: 0rem 2rem;
         .logoDiv .logo{
-            max-width: 40%;
+            font-size: 3rem;
+            max-width: 100%;
         }
        } 
     }

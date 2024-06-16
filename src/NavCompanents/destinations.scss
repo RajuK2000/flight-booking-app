@@ -4,6 +4,7 @@
     .heding{
         text-align: center;
         color:rgb(105, 64, 64);
+        text-decoration: underline;
     }
     .Cards{
         height: max-content;
@@ -32,7 +33,12 @@
             border-radius: 5px;
         }
     }
+
     .container1{
+        .heading{
+            color:rgb(105, 64, 64); 
+            text-decoration: underline;
+        }
         .grid-imgs{
             display: grid;
             grid-template-columns: repeat(2,45vw);
@@ -44,15 +50,25 @@
             }
             .item1,.item2,.item3,.item4,.item5,.item6,.item7{
                   border: 2px solid;
+                  border-radius: 15px;
                   padding: 2%;
                   margin: 5px;
                   display: flex;
                   flex-direction: column;
                   align-items: center;
+                  .imageG{
+                    border-radius: 20px;
+                  }
+            }
+            .item2,.item6{
+                .ExtraCard{
+                    display: none;
+                }
             }
             .viewbt{
                 padding: 2%;
                 font-weight: 700;
+                font-size: 1.2rem;
                 background-color:lightblue;
                 border-radius: 5px;
             }
@@ -74,6 +90,13 @@
             width: 40vw;
             margin: 2% 0% 3% 0%;
         }
+        .grid-imgs{
+            .item2,.item6{
+                .ExtraCard{
+                    display: block;
+                }
+            }
+        }
     }
 }
 @media screen and (min-width:800px) {
@@ -88,6 +111,10 @@
                 display: block;
                 grid-column-start: 2;
                 grid-column-end: 4;
+                .viewbt{
+                    font-size: 1.5rem;
+                    padding: .5rem;
+                }
             }
             .item4,.item1{
                 grid-column-start: 1;
@@ -96,11 +123,20 @@
             .item1{
                 grid-column-start: 1;
                 grid-column-end: 3;
+                .viewbt{
+                    font-size: 1.5rem;
+                    padding: .5rem;
+                }
             }
             .item4{
                 grid-column-start: 2;
                 grid-column-end: 3;
             }
+                .item2,.item6{
+                    .ExtraCard{
+                        display: block;
+                    }
+                }
         }
     }
     }

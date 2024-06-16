@@ -5,11 +5,11 @@ import Subscribe from "../Components/Subcribers/Subcribe"
 
 const Offers=()=>{
     return(
-        <div className="mmm">
+        <>
         <NavBar/>
-        {/* <Subscribe/> */}
-        {/* <Footer/> */}
-        </div>
+        <Subscribe/>
+        <Footer/>
+        </>
     )
 }
 export default Offers

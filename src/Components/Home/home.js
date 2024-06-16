@@ -13,7 +13,7 @@ const Home=()=>{
     },[])
 
     return(
-        <div className="home container">
+        <div className="home">
             <div className="mainText">
                 <h1 data-aos="fade-up" data-aos-duration="2500">Escape the ordinary, embrace the extraordinary.</h1>
             </div>

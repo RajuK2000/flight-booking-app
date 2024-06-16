@@ -2,7 +2,6 @@
     .sectionContainer{
         .titileDiv{
           text-align: center;
-          
           small{
             letter-spacing: .8rem;
             text-transform: uppercase;
@@ -11,9 +10,8 @@
             line-height: 1.5rem;
           }
         }
-
         .infoDiv{
-            // display: flex;
+            display: flex;
             margin-top: 2rem;
             gap: 1.5rem;
             display: grid;
@@ -21,6 +19,9 @@
             
             .singleInfo{
                 margin: 20px;
+                p{
+                    line-break: anywhere;
+                }
                 .number{
                      background-color: blue;
                      padding: 1px 10px;
@@ -41,23 +42,65 @@
             }
         }
         .imgDiv{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             margin: auto;
-            img{
-                width: 80%;
+            width: 40%;
+            .img1,.img2,.img3{
                 max-width:420px;
-                border-radius: 30%;
+                border-radius: 40%;
+            }
+            .img1{
+                position: relative;
+                bottom: 3vh;
+                z-index: 1; 
+            }
+            .img2{
+                position: relative;
+                top: 4vh;
+                right: 19vh;
+            }
+            .img3{
+                position: relative;
+                top: 3vh;
+                right: 18vh;
+                z-index: 2;
             }
         }
         }
     }
-
-    @media screen and (min-width:480px) {
+    @media screen and (min-width:380px) {
         .support{
             .sectionContainer{
+                .imgDiv{
+                    .img1,.img2,.img3{
+                        max-width:420px;
+                        border-radius: 40%;
+                    }
+                    .img1{
+                        position: relative;
+                        bottom: 0vh;
+                        z-index: 1; 
+                    }
+                    .img2{
+                        position: relative;
+                        top: 4vh;
+                        right: 30vh;
+                    }
+                    .img3{
+                        position: relative;
+                        top: 3vh;
+                        right: 30vh;
+                        z-index: 2;
+                    
+                }
                 .infoDiv{
                     display: grid;
                     grid-template-columns: repeat(1,1fr);
-                   } 
+                  
+                   }
+                 }
             }
         }   
     }
@@ -90,9 +133,28 @@
         }   
     }
 
-    @media screen and (min-width:1332px) {
+    @media screen and (min-width:1202px) {
         .support{
             .sectionContainer{
+                .imgDiv{
+                    
+                    .img1{
+                        position: relative;
+                        bottom: 3vh;
+                        z-index: 1; 
+                    }
+                    .img2{
+                        position: relative;
+                        top: 4vh;
+                        right: 55vh;
+                    }
+                    .img3{
+                        position: relative;
+                        top: 2vh;
+                        right: 50vh;
+                        z-index: 2;
+                    }
+                }
                 .infoDiv{
                     gap: 1rem;
                    .textDiv{

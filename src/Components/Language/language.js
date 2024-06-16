@@ -12,7 +12,7 @@ const Language=()=>{
         <div className="langue container section">
             <div className="sectionContainer">
 
-               <div data-aos="fade-left" data-aos-duration="2500" className="imgDiv">
+               <div data-aos="fade-down" data-aos-duration="2500" className="imgDiv">
                 <img src={supportImg} alt=""/>
                 </div> 
 

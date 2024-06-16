@@ -8,6 +8,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import Aos from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from "react"
+import { SiTurkishairlines } from "react-icons/si";
 
 
 
@@ -21,7 +22,8 @@ const Footer=()=>{
             <div className="sectionContainer container grid">
                  <div data-aos="fade-down" data-aos-duration="2500" className="gridOne">
                     <div className="logoDiv">
-                        <img src={logo} className="Logo" alt=""/>
+                        {/* <img src={logo} className="Logo" alt=""/> */}
+                        <SiTurkishairlines className="Logo"/>
                     </div>
                     <p>Your mind should be stronger than your feelings,fly!</p>
                     <div className="socialIcon flex">
