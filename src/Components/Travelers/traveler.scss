@@ -10,18 +10,18 @@
             gap: 1.5rem;
             display: grid;
             grid-template-columns: repeat(1,1fr);
-            .singleTraveler{
+            .singleTraveler1,.singleTraveler2,.singleTraveler3,.singleTraveler4 {
                 z-index: -1;
                 position: relative;
                 height: 350px;
-                width: 85%;
+                width: 100%;
                 max-width: 250px;
                 overflow: hidden;
                 border-radius: 10rem;
                 gap: 1rem;
                 margin: auto;
                 .destinationImage,.travelerImage,.travelerName{
-                          position: absolute;
+                          position: relative;
                 }
                 .destinationImage{
                     height: 100%;
@@ -33,15 +33,15 @@
                     object-fit: cover;
                 }
                 .travelerImage{
-                    height: 50px;
-                    width: 50px;
+                    height: 60px;
+                    width: 60px;
                     object-fit: cover;
                     border-radius: 50%;
-                    bottom: 30px;
-                    left: 40%;
+                    bottom: 0px;
+                    left: 0%;
                     transform: translateX(-50%);
-                    border:5px solid rgba($color: #a4d9eb, $alpha: 1.0) ;
-                    transition:.4s ease-in-out;
+                    border:5px solid rgba($color: #30373a, $alpha: 1.0) ;
+                    transition:2s ease-in-out;
                     animation: animated 2.3s infinite;
 
                 }
@@ -57,12 +57,13 @@
                     }
                 
                 }
-            }
+            
+            
             .travelerName{
-                bottom: -100%;
+                bottom:-10rem;
                 width: 100%;
                 height: max-content ;
-                background-color: lightblue;
+                background-color: rgba(56, 85, 96, .99);
                 opacity: .9;
                 border-radius: 20%;
                 padding: 1.3rem 1rem;
@@ -71,14 +72,16 @@
 
                 span{
                     display: block;
-                    color: black;
+                    color: rgb(222, 212, 212);
                     font-weight: 700;
                 }
                 p{
-                    color: #4b9db8;
-                    font-style: italic;
+                    color: rgb(176, 220, 210);
+                    font-style: inherit;
+                    font-size: 15px;
                 }
             }
+            
             @keyframes animatedBorders {
                 0%{
                     border-radius: 0rem;
@@ -90,17 +93,22 @@
                     border-radius: 5rem;
                 }
             }
+            
+            }
             &:hover{
+                .travelerDetails{
                 .travelerName{
-                    bottom: 0;
-                    transition: 1s ease-in-out;
+                    bottom:9rem;
+                    transition: 1.5s ease-in;
                 }
                 .travelerImage{
-                    bottom: 130px;
-                    transition: 1s ease-in-out;
+                    bottom: 10rem;
+                    transition: 1.5s ease-in;
                 }
-            }
+            } 
         }
+        }
+        
     }
 }
 
@@ -108,21 +116,20 @@
     .travelers{
         .sectionContainer{
             .travelersContainer{
-                display: grid;
                 grid-template-columns: repeat(2,1fr);
                } 
         }
     }   
 }
-@media screen and (min-width:760px) {
-    .travelers{
-        .sectionContainer{
-            .travelersContainer{
-                grid-template-columns: repeat(3,1fr);
-               } 
-        }
-    }   
-}
+// @media screen and (min-width:760px) {
+//     .travelers{
+//         .sectionContainer{
+//             .travelersContainer{
+//                 grid-template-columns: repeat(2,1fr);
+//                } 
+//         }
+//     }   
+// }
 @media screen and (min-width:960px) {
     .travelers{
         .sectionContainer{

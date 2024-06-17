@@ -104,17 +104,16 @@ li{
         padding: 1rem 0 4rem;
     }    
  }
-
  ::selection{
-    background: rgb(103, 114, 61);
-    color: rgb(186, 192, 197);
+    background: rgb(14, 129, 195);
+    color: rgb(241, 243, 245);
  }
  ::-webkit-scrollbar{
-    width: 10px;
-    color: gray;
+    width: 5px;
+    background: rgb(231, 231, 237);
  }
  ::-webkit-scrollbar-thumb{
-    background: blue;
-    border: 10px;
+    background: rgb(61, 61, 64);
+    border: 0px;
     border-radius: 10px;
  }
