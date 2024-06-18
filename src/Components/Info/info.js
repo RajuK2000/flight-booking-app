@@ -28,7 +28,7 @@ const Info=()=>{
                         <RxCalendar className="icon"/>
                         </div>
                         <span className="cardTitle">Book & Relax</span>
-                        <p>You can also call airlines from your phone and book tickets!</p>
+                        <p className="subtitle"> Pre-book flight amenities (like meals and seats) → Board the plane → Settle in your seat → Enjoy pre-booked services → Relax and unwind.</p>
                     </div>
 
                     <div data-aos="fade-up" data-aos-duration="2500" className="singleCard grid">
@@ -36,26 +36,24 @@ const Info=()=>{
                         <BsShieldCheck className="icon"/>
                         </div>
                         <span className="cardTitle">Smart Checklist</span>
-                        <p>You can easily check the various services for it is using your phone!</p>
+                        <p className="subtitle">Book flight → Check-in online → Pack essentials (ID, tickets, toiletries) → Arrive early → Go through security → Find gate →  Board on time →  Enjoy.</p>
                     </div>
 
                     <div data-aos="fade-down" data-aos-duration="2500" className="singleCard grid">
+                        <div className="iconDiv flex col4">
+                        <MdOutlineSecurity className="icon"/>
+                        </div>
+                        <span className="cardTitle">Security</span>
+                        <p className="subtitle">Follow TSA guidelines, arrive early, prepare liquids separately, remove electronics from bags, and cooperate with screening procedures for a smooth process.</p>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-duration="2500" className="singleCard grid card4">
                         <div className="iconDiv flex col3">
                         <CiBookmarkCheck className="icon"/>
                         </div>
                         <span className="cardTitle">Save More</span>
-                        <p>You are save more details  for Our services plece use Airline services!</p>
+                        <p className="subtitle">Book in advance, use fare comparison sites, travel off-peak, join frequent flyer programs, and pack light to avoid extra fees.</p>
                     </div>
-
-                    <div data-aos="fade-up" data-aos-duration="2500" className="singleCard grid">
-                        <div className="iconDiv flex col4">
-                        <MdOutlineSecurity className="icon"/>
-
-                        </div>
-                        <span className="cardTitle">Security</span>
-                        <p>We are connect all over the world. Your security is responsibility of our travels!</p>
-                    </div>
-
                 </div>
             </div>
         </div>

@@ -5,6 +5,9 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from "react"
 import dub from "../../Media/dub.jpg"
+import flt1 from "../../Media/flt1.jpeg"
+import flt2 from "../../Media/flt2.jpeg"
+import flt3 from "../../Media/flt3.jpeg"
 
 const Support=()=>{
     useEffect(()=>{
@@ -25,10 +28,10 @@ const Support=()=>{
 
                     <div data-aos="fade-down" data-aos-duration="2500" className="singleInfo">
                         <span className="number">01</span>
-                        <h4>Travel requirenemts for Dubai</h4>
-                        <p>For travel to Dubai, ensure your passport is valid for at least six months, check if you need 
-                            a visa based on your nationality, and confirm the latest COVID-19 entry requirements, including
-                             any necessary PCR tests or vaccination proof.!</p>
+                        <h4> Travel Information and Support</h4>
+                        <p>Travel information and support services are designed to help passengers manage their travel plans, stay
+                             informed about their flights, and receive assistance when needed. These services can significantly enhance
+                              the travel experience by providing timely information and resolving issues efficiently. </p>
                     </div>
                     <div data-aos="fade-down" data-aos-duration="3500" className="singleInfo">
                         <span className="number colorOne">02</span>
@@ -48,9 +51,9 @@ const Support=()=>{
                  </div>
 
                 <div data-aos="fade-up" data-aos-duration="4500" className="imgDiv">
-                    <img src={dub} alt="" className="img1"/>
-                    <img src={dub} alt="" className="img2"/>
-                    <img src={dub} alt="" className="img3"/>
+                    <img src={flt1} alt="" className="img1"/>
+                    <img src={flt2} alt="" className="img2"/>
+                    <img src={flt3} alt="" className="img3"/>
                     
                 </div>
 

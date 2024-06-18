@@ -9,7 +9,7 @@ function App() {
   return (
     <>
     {
-    //  alert("<--This web site is Not complete. Under Processing-->")
+     alert("<--This web site is Not complete. Under Processing-->")
     }
     <NavPath/>
     {/* <SignIn/> */}

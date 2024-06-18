@@ -91,7 +91,7 @@ const Destinations=()=>{
             <div className="grid-imgs">
                 <span className="item1" data-aos="fade-up" data-aos-duration="2500">1
                     <img className="imageG" src={dubaiImg} alt="dubai"></img>
-                    <q style={{lineBreak:"anywhere" ,fontSize:"1.5rem"}}>Before oil was discovered in <strong><mark>Dubai</mark></strong> in the late 1960s, the city's main trade was pearl diving. In the early 20th century, there were around 300 dhows working from Dubai Creek, employing more than 7,...
+                    <q style={{lineBreak:"anywhere" ,fontSize:"1.5rem"}}>Before oil was discovered in <strong>Dubai</strong> in the late 1960s, the city's main trade was pearl diving. In the early 20th century, there were around 300 dhows working from Dubai Creek, employing more than 7,...
                       Archaeological finds such as spearheads have revealed there were humans in the area that is now Dubai over 100,000 years ago.
                     </q><br/>
                     <button className="viewbt">See-More <MdFlight/></button>
@@ -100,7 +100,7 @@ const Destinations=()=>{
 
                     <div style={{marginBottom:"5px"}}>
                     <img className="imageG" src={Africa} alt="dubai"></img>
-                    <q style={{lineBreak:"anywhere",fontSize:"1.2rem"}}>Located on the southwest tip of <strong><mark>South Africa’s</mark></strong>Western Cape Province,
+                    <q style={{lineBreak:"anywhere",fontSize:"1.2rem"}}>Located on the southwest tip of <strong>South Africa’s</strong>Western Cape Province,
                          Cape Town is the most popular tourist destination in all of Africa. 
                         The metropolis enjoys a mild, Mediterranean climate, a well-developed infrastructure and a spectacular natural setting. 
                     </q><br/>
@@ -110,7 +110,7 @@ const Destinations=()=>{
                     <div style={{marginTop:"5px"}} className="ExtraCard">
                     <hr/>
                     <img className="imageG" src={dubai} alt="dubai"></img>
-                    <q style={{lineBreak:"anywhere",fontSize:"1.2rem"}}><strong><mark>Dubai</mark></strong> is the fourth most visited place in the world and is 
+                    <q style={{lineBreak:"anywhere",fontSize:"1.2rem"}}><strong>Dubai</strong> is the fourth most visited place in the world and is 
                         famous for its high-rising architectural wonders and excellent collection of resorts and spas.
                     </q><br/>
                     <button className="viewbt">See-More <MdFlight/></button>
@@ -119,7 +119,7 @@ const Destinations=()=>{
 
                 <span className="item3" data-aos="fade-up" data-aos-duration="2500">3
                     <img className="imageG" src={Ephil} alt="dubai"></img>
-                    <q style={{lineBreak:"anywhere",fontSize:"1.2rem"}}>The Eiffel Tower along the Seine River, <strong><mark>Paris</mark></strong>. 
+                    <q style={{lineBreak:"anywhere",fontSize:"1.2rem"}}>The Eiffel Tower along the Seine River, <strong>Paris</strong>. 
                         The Eiffel Tower stands on four lattice-girder piers that taper inward and join to form a single large vertical tower.
                         As they curve inward, the piers are connected to each other by networks of girders at two levels that afford viewing platforms for tourists. 
                     </q><br/>
@@ -128,14 +128,14 @@ const Destinations=()=>{
 
                 <span className="item4" data-aos="fade-down" data-aos-duration="2500">4
                     <img className="imageG" src={indiangate} alt="dubai"></img>
-                    <q style={{lineBreak:"anywhere",fontSize:"1.2rem"}}> India Gate is a historical monument situatedin the capital of <strong><mark>India</mark></strong>,
+                    <q style={{lineBreak:"anywhere",fontSize:"1.2rem"}}> India Gate is a historical monument situatedin the capital of <strong>India</strong>,
                          New Delhi. It was built to pay homage to the soldierswho fought bravely during World War I.
                     </q><br/>
                     <button className="viewbt">See-More <MdFlight/></button>
                 </span>
                 <span className="item5" data-aos="fade-up" data-aos-duration="2500">5
                     <img className="imageG" src={Australia} alt="dubai"></img>
-                    <q style={{lineBreak:"anywhere",fontSize:"1.2rem"}}>This is a famous establishment that becomes iconic for <strong><mark>Australia.</mark></strong>
+                    <q style={{lineBreak:"anywhere",fontSize:"1.2rem"}}>This is a famous establishment that becomes iconic for <strong>Australia.</strong>
                          Whenever the name of the country is uttered anywhere on the globe, people get the vision of the Opera House at least once
                           in their mind.
                      </q><br/>
@@ -145,7 +145,7 @@ const Destinations=()=>{
                 <span className="item6" data-aos="fade-down" data-aos-duration="2500">6
                     <div>
                     <img className="imageG" src={newyork} alt="dubai"></img>
-                    <q style={{lineBreak:"anywhere", fontSize:"1.2rem"}}>The city of <strong><mark>New-York</mark></strong> has been the setting for thousands of films and
+                    <q style={{lineBreak:"anywhere", fontSize:"1.2rem"}}>The city of <strong>New-York</strong> has been the setting for thousands of films and
                          television series over the years, which has drawn fans from all around the world as a result. 
                     </q><br/>
                     <button className="viewbt">See-More <MdFlight/></button>
@@ -155,7 +155,7 @@ const Destinations=()=>{
                     <hr style={{color:"black" }} />
                     <img className="imageG" src={Japann} alt="dubai"></img>
                     <q style={{lineBreak:"anywhere",fontSize:"1.2rem"}}>If you have the body to control cold and won’t be the victims of frostbites, then winter in japan is a good call to make.
-                         It is a perfect time of the year for those who are planning to ski in <strong><mark>Japan</mark></strong>.
+                         It is a perfect time of the year for those who are planning to ski in <strong>Japan</strong>.
                     </q><br/>
                     <button className="viewbt">See-More <MdFlight/></button>
                     </div>
@@ -164,7 +164,7 @@ const Destinations=()=>{
 
                 <span className="item7" data-aos="fade-up" data-aos-duration="2500">7  
                     <img className="imageG" src={Tajmahal} alt="dubai"></img>
-                    <q style={{lineBreak:"anywhere",fontSize:"1.5rem"}}>In <strong><mark>India</mark></strong> Rabindranath Tagore described the Taj Mahal, Agra as “a tear on the cheek of immortality”,
+                    <q style={{lineBreak:"anywhere",fontSize:"1.5rem"}}>In <strong>India</strong> Rabindranath Tagore described the Taj Mahal, Agra as “a tear on the cheek of immortality”,
                          Rudyard Kipling as “personification of all immaculate”, and its creator, Emperor Shah Jahan, said that “the sun and the moon did tears
                           fall from the eyes “. Every year, tourists with twice the population of Agra, pass through the city gates at least once in their lifetime to
                            see the building, aptly named by many of the most beautiful in the world. Few leave disappointed.

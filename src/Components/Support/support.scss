@@ -53,22 +53,25 @@
             max-width: 40%;
             .img1,.img2,.img3{
                 max-width:420px;
+                border: 2px solid;
+                box-shadow: 5px,10px,2px;
                 border-radius: 40%;
+                height: 11rem;
             }
             .img1{
                 position: relative;
-                bottom: 3vw;
+                bottom: 7vw;
                 z-index: 1; 
             }
             .img2{
                 position: relative;
-                top: 4vw;
+                top: 0vw;
                 right: 45vw;
             }
             .img3{
                 position: relative;
-                top: 3vw;
-                right: 45vw;
+                top: 7vw;
+                right: 40vw;
                 z-index: 2;
             }
         }
@@ -81,20 +84,22 @@
                     
                     .img1{
                         position: relative;
-                        bottom: 10vw;
+                        bottom: 8vw;
                         z-index: 1; 
+                        height: 15rem;
                     }
                     .img2{
                         position: relative;
-                        top: 3vw;
+                        top: 0vw;
                         right: 50vw;
+                        height: 15rem;
                     }
                     .img3{
                         position: relative;
-                        top: 3vw;
-                        right: 40vw;
+                        top: 4vw;
+                        right: 45vw;
                         z-index: 2;
-                    
+                        height: 15rem;
                 }
             }
                 .infoDiv{
@@ -147,18 +152,20 @@
                         position: relative;
                         bottom: 10vw;
                         z-index: 1; 
+                        height: 20rem;
                     }
                     .img2{
                         position: relative;
-                        top: 6vw;
+                        top: 5vw;
                         right: 7vw;
+                        height: 20rem;
                     }
                     .img3{
                         position: relative;
                         top: 0vw;
                         right: 45vw;
                         z-index: 2;
-                    
+                        height: 20rem;
                 }
             }
                 .infoDiv{
@@ -183,17 +190,20 @@
                         position: relative;
                         bottom: 3vw;
                         z-index: 1; 
+                        height: 20rem;
                     }
                     .img2{
                         position: relative;
                         top: 2vw;
                         right: 25vw;
+                        height: 20rem;
                     }
                     .img3{
                         position: relative;
-                        top: 2vw;
+                        top: 0vw;
                         right: 25vw;
                         z-index: 2;
+                        height: 20rem;
                     }
                 }
                 .infoDiv{
