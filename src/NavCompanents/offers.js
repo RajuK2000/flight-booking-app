@@ -6,7 +6,7 @@ import "./offers.scss"
 import { BsBank } from "react-icons/bs"
 import { PiAirplaneInFlightFill } from "react-icons/pi"
 import { MdHolidayVillage } from "react-icons/md"
-import { FaCcPaypal, FaFireAlt } from "react-icons/fa"
+import { FaAngleDoubleUp, FaCcPaypal, FaFireAlt } from "react-icons/fa"
 import { useState } from "react"
 import firstOffer from "../Media/OffersPageImg/1stBooking.png"
 import Wcl from "../Media/OffersPageImg/WCL.png"
@@ -53,21 +53,40 @@ import zealand from "../Media/OffersPageImg/Zealand.jpg"
 import elernMarket  from "../Media/OffersPageImg/elearnmarkets-sm.png"
 import Stackedge from "../Media/OffersPageImg/stockedge-sm.png"
 import Asco from "../Media/OffersPageImg/acko-sm2.png"
+import { Link } from "react-router-dom"
 
 const Offers=()=>{
     const [active,setactive] = useState("")
+    const [pos,setpos]=useState("")
+    const [arrow,setarrow]=useState("")
     // const navigate=useNavigate("")
          console.log("Offers Page..")
+
+   const navigatetoTop=()=>{
+    if(window.scrollY <= 20){
+      setpos("sticky")
+      setarrow("arrowS")
+    }else{
+     setpos("UseSticky")
+     setarrow("")
+    }
+   }
+   window.addEventListener("scroll",navigatetoTop)
+
     const handleclick=(data)=>{
         // navigate(`${data}`)
        return setactive(data)
     }
+
+    const poistion=(event)=>{
+        event.preventDefault()  
+    }
+
     return(
         <>
         <NavBar/>
         <div className="Mcontainer">
-           <div className="UseSticky">
-        <img src={offerFlight} alt="offerimg" className="image"/>
+        <img src={offerFlight} alt="offerimg" className="image" id="main"/>
             <div className="subContainer">
                <ul className="Bar">
                 <li className="list" onClick={()=>handleclick("SpecialOffers")}><BiSolidOffer className="icon"/>Special Offers</li>
@@ -78,6 +97,8 @@ const Offers=()=>{
                 <li className="list" onClick={()=>handleclick("Hot Deals")}><FaFireAlt className="icon"/> Hot Deals</li>
                </ul>
             </div>
+            <div className={pos}>
+                <Link to="#" className="navigateBtn" onClick={()=>poistion()}><FaAngleDoubleUp className={arrow}/></Link>
             </div>
 
          <h1>{active}</h1>

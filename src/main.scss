@@ -109,11 +109,12 @@ li{
     color: rgb(241, 243, 245);
  }
  ::-webkit-scrollbar{
-    width: 5px;
+    width: 1px;
+    height: 4px;
     background: rgb(231, 231, 237);
  }
  ::-webkit-scrollbar-thumb{
     background: rgb(61, 61, 64);
     border: 0px;
-    border-radius: 10px;
+    border-radius: 5px;
  }

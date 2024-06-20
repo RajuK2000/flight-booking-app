@@ -1,7 +1,28 @@
 .Mcontainer{
+   .sticky{
+    display: none;
+   }
     .UseSticky{
-        position: sticky;
-        top: -95px;
+        .arrowS{
+            display: none;
+           }
+           .arrowS1{
+            display: block;
+           }
+        position: fixed;
+        bottom: 5rem;
+        right: 3rem;
+        .navigateBtn{
+            background-color: rgb(200, 205, 210);
+            padding: 1.5rem;
+            border-radius: 20%;
+            font-weight: 600;
+            color:black;
+            &:hover{
+                background-color: rgb(214, 231, 247);
+            }
+        }
+     }     
     .image{
         width: 100%;
         height: 15rem; 
@@ -13,9 +34,9 @@
         position: relative;
         bottom: 2.8rem;
        .Bar{
-        border: 1px solid black;
+        // border: 1px solid black;
         border-radius: 10px;
-        background-color: rgb(161, 162, 163);
+        background-color: rgba(220, 227, 235,0.8);
         padding: 1rem;
         width: fit-content;
         display: flex;
@@ -39,7 +60,7 @@
         }
        }
     }
-}
+
     #SpecialOffers,#BankOffers,#PaymentApps,#Flights-Offers,#HolidayOffers,#HotDeals{
         width: 100%;
         display: grid;
@@ -63,7 +84,121 @@
             flex-wrap: wrap;
             gap: 10px;
             justify-content: space-between;
-        }   
+        } 
+        &:hover{
+            background-color: rgb(221, 235, 248);
+        }  
       }
     }
 }
+
+@media screen and (min-width:320px) and (max-width:520px){    
+    .Mcontainer{
+        .UseSticky{
+            .navigateBtn{
+               padding: 1rem;
+            }
+        }
+        .subContainer{
+            bottom: 2.8rem;
+           .Bar{
+            width: 98%;
+            overflow: scroll;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            gap: 4rem;
+            .list{
+                padding: .3rem .4rem .6rem;
+                font-weight: 600;
+                border-radius: 1rem;
+                gap:.5rem;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+           }
+        }
+        .image{
+            width: 100%;
+            height: 8rem; 
+         }
+
+        #SpecialOffers,#BankOffers,#PaymentApps,#Flights-Offers,#HolidayOffers,#HotDeals{
+            grid-template-columns: repeat(1,1fr);
+            .cards{
+                width:80vw;
+            }
+        }
+    }
+
+}
+@media screen and (min-width:520px) and (max-width:999px){    
+    .Mcontainer{
+        .subContainer{
+            bottom: 2.8rem;
+           .Bar{
+            width: 98%;
+            overflow: scroll;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            gap: 4rem;
+            .list{
+                padding: .3rem .4rem .6rem;
+                font-weight: 600;
+                border-radius: 1rem;
+                gap:.5rem;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+           }
+        }
+        .image{
+            width: 100%;
+            height: 8rem; 
+         }
+
+        #SpecialOffers,#BankOffers,#PaymentApps,#Flights-Offers,#HolidayOffers,#HotDeals{
+            grid-template-columns: repeat(2,1fr);
+            .cards{
+                width:45vw;
+            }
+        }
+    }
+
+}
+@media screen and (min-width:1000px) and (max-width:1320px){    
+    .Mcontainer{
+        .subContainer{
+            bottom: 2.8rem;
+           .Bar{
+            width: 98%;
+            overflow: scroll;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            gap: 4rem;
+            .list{
+                padding: .3rem .4rem .6rem;
+                font-weight: 600;
+                border-radius: 1rem;
+                gap:.5rem;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+           }
+        }
+        .image{
+            width: 100%;
+            height: 8rem; 
+         }
+
+        #SpecialOffers,#BankOffers,#PaymentApps,#Flights-Offers,#HolidayOffers,#HotDeals{
+            grid-template-columns: repeat(3,1fr);
+            .cards{
+                width:32vw;
+            }
+        }
+    }
+
+}
+
+
+
