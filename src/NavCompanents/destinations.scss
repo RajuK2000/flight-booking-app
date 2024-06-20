@@ -1,9 +1,13 @@
 .Container{
-    margin-top: 10px;
+    .Mimg{
+      width: 100%;
+      height: 7rem;
+      background: rgba(6, 32, 39, 0.9);
+    }
     text-align: center;
     .heding{
         text-align: center;
-        color:rgb(105, 64, 64);
+        color:rgb(59, 44, 44);
         text-decoration: underline;
     }
     .Cards{
@@ -29,14 +33,17 @@
         .viewbt{
             padding: 2%;
             font-weight: 700;
-            background-color:lightblue;
+            background-color:rgb(128, 148, 155);
             border-radius: 5px;
+        }
+        &:hover{
+            background-color: rgb(229, 233, 237);
         }
     }
 
     .container1{
         .heading{
-            color:rgb(105, 64, 64); 
+            color:rgb(59, 44, 44);
             text-decoration: underline;
         }
         .grid-imgs{
@@ -59,6 +66,9 @@
                   .imageG{
                     border-radius: 20px;
                   }
+                  &:hover{
+                    background-color: rgb(225, 234, 241);
+                }
             }
             .item2,.item6{
                 .ExtraCard{
@@ -69,18 +79,22 @@
                 padding: 2%;
                 font-weight: 700;
                 font-size: 1.2rem;
-                background-color:lightblue;
+                background-color:rgb(138, 166, 176);
                 border-radius: 5px;
             }
             .item7{
                 display: none;
             }
+           
         }
     }
 }
 
 @media screen and (min-width:420px) {
     .Container{
+        .Mimg{
+            height: 8rem;
+          }
         .card-grid{
             display: flex;
             flex-wrap: wrap;
@@ -101,6 +115,9 @@
 }
 @media screen and (min-width:800px) {
     .Container{
+        .Mimg{
+            height: 10rem;
+          }
         .Cards{
             width: 32vw;  
         }

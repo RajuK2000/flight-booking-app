@@ -11,7 +11,6 @@ import { FaUserCircle } from "react-icons/fa"
 
 const NavBar=()=>{
 const [active,setActive]=useState("navBarMenu")
-// const [noBg,setaddBg]=useState("navBarTwo")
 
    const showNavbar=()=>{
     setActive("navBarMenu showNavBar")
@@ -20,15 +19,6 @@ const [active,setActive]=useState("navBarMenu")
     setActive("navBarMenu")
    }
   
-  //  const addBgColor=()=>{
-  //   if(window.scrollY >= 10){
-  //   setaddBg("navBarTwo navbar_Bg")
-  //   }else{
-  //    setaddBg("navBarTwo")
-  //   }
-  //  }
-  //  window.addEventListener("scroll",addBgColor)
-
     return(
       <div className="navBar">
         <div className="navBarOne flex">
@@ -58,12 +48,12 @@ const [active,setActive]=useState("navBarMenu")
             <li onClick={removeNavbar} >
               <Link to="/" className="listItems" >Home</Link></li>
             <li onClick={removeNavbar} >
-            <Link to="/About" className="listItems" >About</Link></li>
+            <Link to="/Destinations" className="listItems" >Destinations</Link></li>
             <li onClick={removeNavbar}>
             <Link to="/Offers" className="listItems" >Offers</Link>
             </li>
             <li onClick={removeNavbar} >
-            <Link to="/Destinations" className="listItems" >Destinations</Link></li>
+            <Link to="/About" className="listItems" >About</Link></li>
             <li onClick={removeNavbar} >
             <Link to="/Contact" className="listItems" >Contact</Link></li>
             {/* <button className="btn flex btnOne">Contact</button> */}

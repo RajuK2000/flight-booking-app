@@ -1,0 +1,99 @@
+.HeadImg{
+ width: 100%;
+ height: 10rem;
+}
+.Acontainer{
+    .heading{
+        padding: 1rem;
+        background-color: rgb(238, 245, 245);
+        color: rgb(53, 74, 74);
+        border-radius: 10px;
+    }
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+     .Subcontainer{
+        width:70%;
+        display: flex;
+        flex-direction: column;
+        .summaryTag{
+            font-size: 20px;
+            font-weight: 550;
+            color: rgb(51, 51, 138);
+        }
+        .Para{
+            padding: 8px 1px;
+            font-style: italic;
+            .feedback{
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                .fedPara{
+                    font-size: 22px;
+                    font-weight: bolder;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+                .YesNo{
+                    display: flex;
+                    justify-content: space-evenly;
+                    gap: 4rem;
+                .yesbtn{
+                    height: 3rem;
+                    width: 10rem;
+                    border-radius: 15px;
+                    font-size: 20px;
+                    &:hover{
+                        background-color: aliceblue;
+                        cursor: pointer;
+                    }
+                }
+            }
+             }
+         }
+     }
+}
+
+@media screen and (min-width:300px) and (max-width:620px){
+   .HeadImg{
+    height: 7rem;
+   } 
+   .Acontainer{
+    .heading{
+        font-size: 25px;
+    }
+    .Subcontainer{
+        .Para{
+            .feedback{
+                flex-direction: column;
+                .YesNo{
+                    gap: 1rem;
+                    .yesbtn{
+                        width: 7rem;
+                        height: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+   }
+}
+
+@media screen and (min-width:620px) and (max-width:920px){
+    .Acontainer{
+     .Subcontainer{
+         .Para{
+             .feedback{
+                 flex-direction:row;
+                 .YesNo{
+                     gap: .5rem;
+                     .yesbtn{
+                         width: 7rem;
+                         height: 2.5rem;
+                     }
+                 }
+             }
+         }
+     }
+    }
+ }

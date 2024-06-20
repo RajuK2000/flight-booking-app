@@ -23,6 +23,7 @@ import GreatbarierRef from "../Media/Great barrier ref.jpeg"
 import Subscribe from "../Components/Subcribers/Subcribe";
 import { useEffect } from "react";
 import Aos from "aos";
+import navimg from "../Media/Destinations/navimg.png"
 
 const Destinations=()=>{
     useEffect(()=>{
@@ -30,9 +31,9 @@ const Destinations=()=>{
     })
     return(
         <>
-        <NavBar/>
+        <NavBar/>     
         <div className="Container">
-           
+        <img src={navimg} alt="navimg" className="Mimg"></img>
             <h1 className="heding" data-aos="fade-down" data-aos-duration="1500"><MdFlight/>Top Visited Places Our Customers<MdFlight/></h1>
             <div className="card-grid">
                 <span className="Cards" data-aos="fade-down" data-aos-duration="2500">
