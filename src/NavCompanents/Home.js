@@ -10,7 +10,7 @@ import Travelars from '../Components/Travelers/travelers';
 
 const HomePage=()=>{
     return(
-        <>
+    <>
   <NavBar/>
   <Home/>
   <Search/>
@@ -20,7 +20,7 @@ const HomePage=()=>{
   <Travelars/>
   <Subscribe/>
   <Footer/>
-        </>
+    </>
     )
 }
 export default HomePage

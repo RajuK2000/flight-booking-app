@@ -6,7 +6,8 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { Children } from "react";
+
+// import { Children } from "react";
 
 // THis Code Was search fuctionality....
 
@@ -69,12 +70,72 @@ const Search=()=>{
     const [toDate,setToDate]=useState("")
     const [classes,setClasses]=useState("")
     
+    // const axios = require('axios');
+//     const GetData = async () => {
+
+//     const { getJson } = require("serpapi");
+
+// getJson({
+//   api_key: "64357ec25bacb3a9f3f176e6d0e8dbd054a5a04705b3e669af9884d7d7def443",
+//   engine: "google_flights",
+//   departure_id: fromLocation,
+//           arrival_id: toLocation,
+//           outbound_date: fromDate,
+//           return_date: toDate,
+//           adults: adults,
+//           children: childrens,
+//           travel_class: classes,
+//   booking_token: "WyJDalJJYjJkRGNubFBWekpGVkhkQlFUazJTa0ZDUnkwdExTMHRMUzB0TFhCbVltWnhOa0ZCUVVGQlIxWm5UWE5SUlY5RU4wRkJFZ2RDUVRNeU9DTXhHZ3NJMTVJQkVBSWFBMVZUUkRnY2NOZVNBUT09IixbWyJDREciLCIyMDIzLTEyLTA1IiwiTEhSIixudWxsLCJCQSIsIjMwMyJdXSxbWyJMSFIiLCIyMDIzLTEyLTI4IiwiQ0RHIixudWxsLCJCQSIsIjMyOCJdXV0="
+// }, (json) => {
+//   console.log(json);
+// });
+//     }
+
+
+
+    // const GetData = async () => {
+    //   const options = {
+    //     method: 'GET',
+    //     url: 'https://serpapi.com/google-flights-booking-options',
+    //     params: {
+    //       api_key: '64357ec25bacb3a9f3f176e6d0e8dbd054a5a04705b3e669af9884d7d7def443',
+    //       engine: 'google_flights',
+    //     //   gl: 'us',
+    //     //   hl: 'en',
+    //     //   currency: 'USD',
+    //       departure_id: fromLocation,
+    //       arrival_id: toLocation,
+    //       outbound_date: fromDate,
+    //       return_date: toDate,
+    //       adults: adults,
+    //       children: childrens,
+    //       travel_class: classes,
+    //     }
+    //   };
+    
+    //   try {
+    //     const response = await axios.request(options);
+    //     console.log(response.data);
+    //     document.write(JSON.stringify(response.data));
+    //   } catch (error) {
+    //     console.error('Error fetching flight data:', error);
+    //   }
+    // };
+    
+        
+
+
+    
+
+
+
+// ........................................................................................
 
 
     const GetData=async()=>{
         const options = {
             method: 'GET',
-            url: 'https://sky-scanner3.p.rapidapi.com/flights/search-everywhere',
+            url: 'https://sky-scanner3.p.rapidapi.com/flights/search-one-way',
             params: {
               fromEntityId: fromLocation,
               toEntityId: toLocation,

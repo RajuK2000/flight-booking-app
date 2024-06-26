@@ -25,7 +25,6 @@ import BOIbank from "../Media/OffersPageImg/BOI bank.png"
 import Canara from "../Media/OffersPageImg/canara-bank.png"
 import PNB from "../Media/OffersPageImg/pnb.png"
 import DigiBnak from "../Media/OffersPageImg/digibank-sm.png" 
-// import { useNavigate } from "react-router-dom"
 
 import Mobikwick from "../Media/OffersPageImg/mobiKwik-30apr24-sm.png"
 import Phonepay from "../Media/OffersPageImg/phonepay.jpg"
@@ -53,13 +52,11 @@ import zealand from "../Media/OffersPageImg/Zealand.jpg"
 import elernMarket  from "../Media/OffersPageImg/elearnmarkets-sm.png"
 import Stackedge from "../Media/OffersPageImg/stockedge-sm.png"
 import Asco from "../Media/OffersPageImg/acko-sm2.png"
-import { Link } from "react-router-dom"
 
 const Offers=()=>{
-    const [active,setactive] = useState("")
+
     const [pos,setpos]=useState("")
     const [arrow,setarrow]=useState("")
-    // const navigate=useNavigate("")
          console.log("Offers Page..")
 
    const navigatetoTop=()=>{
@@ -73,35 +70,24 @@ const Offers=()=>{
    }
    window.addEventListener("scroll",navigatetoTop)
 
-    const handleclick=(data)=>{
-        // navigate(`${data}`)
-       return setactive(data)
-    }
-
-    const poistion=(event)=>{
-        event.preventDefault()  
-    }
-
     return(
         <>
         <NavBar/>
-        <div className="Mcontainer">
+        <div className="Mcontainer" id="Mmain">
         <img src={offerFlight} alt="offerimg" className="image" id="main"/>
             <div className="subContainer">
                <ul className="Bar">
-                <li className="list" onClick={()=>handleclick("SpecialOffers")}><BiSolidOffer className="icon"/>Special Offers</li>
-                <li className="list" onClick={()=>handleclick("BankOffers")}><BsBank className="icon"/> Bank Offers</li>
-                <li className="list" onClick={()=>handleclick("Payment Apps")}><FaCcPaypal className="icon"/> Payment Apps</li>
-                <li className="list" onClick={()=>handleclick("Flight Offers")}><PiAirplaneInFlightFill className="icon"/> Flight Offers</li>
-                <li className="list" onClick={()=>handleclick("Holiday Offers")}><MdHolidayVillage className="icon"/> Holiday Offers</li>
-                <li className="list" onClick={()=>handleclick("Hot Deals")}><FaFireAlt className="icon"/> Hot Deals</li>
+                <li className="list" ><BiSolidOffer className="icon"/><a href="#SpecialOffers">Special Offers</a></li>
+                <li className="list" ><BsBank className="icon"/><a href="#BankOffers"> Bank Offers</a></li>
+                <li className="list" ><FaCcPaypal className="icon"/><a href="#UPIOffers"> UPI Offers</a></li>
+                <li className="list" ><PiAirplaneInFlightFill className="icon"/><a href="#Flights-Offers"> Flight Offers</a></li>
+                <li className="list" ><MdHolidayVillage className="icon"/><a href="#HolidayOffers"> Holiday Offers</a></li>
+                <li className="list" ><FaFireAlt className="icon"/><a href="#HotDeals"> Hot Deals</a></li>
                </ul>
             </div>
             <div className={pos}>
-                <Link to="#" className="navigateBtn" onClick={()=>poistion()}><FaAngleDoubleUp className={arrow}/></Link>
+                <a href="#Mmain" className="navigateBtn"><FaAngleDoubleUp className={arrow}/></a>
             </div>
-
-         <h1>{active}</h1>
 
             <h1 style={{textAlign:"center", padding:"10px"}}>Special Deals</h1>
             <div id="SpecialOffers">
@@ -385,7 +371,7 @@ const Offers=()=>{
             </div>
 
             <h1 style={{textAlign:"center", padding:"10px"}}>UPI Offers</h1>
-            <div id="PaymentApps">
+            <div id="UPIOffers">
 
             <div className="cards">
                <img src={Mobikwick} alt="1stOffers" className="images"/>

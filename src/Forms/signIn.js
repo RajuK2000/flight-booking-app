@@ -12,6 +12,11 @@ import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { Container, ThemeProvider, createTheme } from '@mui/material';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../FireBase/fireBase-Conflicts';
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import { createContext } from 'react';
 
 function Copyright(props) {
   return (
@@ -28,20 +33,51 @@ function Copyright(props) {
 
 // TODO remove, this demo shouldn't need to reset the theme.
 
-const defaultTheme = createTheme();
+const DefaultTheme = createTheme();
+
+// export const Defaultprovider = createContext()
 
 export default function SignIn() {
+
+  const [user,setUser]=useState({
+    email:null,
+    password:null,
+  })
+  const navigate = useNavigate()
+
+  const onchangeHandler=(e)=>{
+    const {name,value}=e.target
+    setUser({...user,[name]:value})
+   }
+
+   const signInnavigate=()=>{
+    navigate("/signUp")
+   }
+
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
+    signInWithEmailAndPassword(auth, user.email, user.password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    console.log(user)
+    alert("user login sucessfully")
+    localStorage.setItem("token",user.accessToken)
+    localStorage.setItem("user",JSON.stringify(user))
+    // ...
+    navigate("/")
+  })
+  .catch((error) => {
+    // const errorCode = error.code;
+    // const errorMessage = error.message;
+    alert(error.message)
+  });
   };
 
   return (
-    <ThemeProvider theme={defaultTheme}>
+    // <Defaultprovider.Provider value={{user}}>
+    <ThemeProvider theme={DefaultTheme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
@@ -67,7 +103,9 @@ export default function SignIn() {
               label="Email Address"
               name="email"
               autoComplete="email"
+              value={user.email}
               autoFocus
+              onChange={onchangeHandler}
             />
             <TextField
               margin="normal"
@@ -77,7 +115,9 @@ export default function SignIn() {
               label="Password"
               type="password"
               id="password"
+              value={user.password}
               autoComplete="current-password"
+              onChange={onchangeHandler}
             />
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
@@ -98,8 +138,8 @@ export default function SignIn() {
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="#" variant="body2">
-                  {"Don't have an account? Sign Up"}
+                <Link variant="body2" to="/signUp">
+                  {<p style={{fontSize:"16px",cursor:"pointer"}} onClick={signInnavigate}>"Don't have an account? Sign Up"</p>}
                 </Link>
               </Grid>
             </Grid>
@@ -108,5 +148,6 @@ export default function SignIn() {
         <Copyright sx={{ mt: 5, mb: 2 }} />
       </Container>
     </ThemeProvider>
+    // </Defaultprovider.Provider>
   );
 }

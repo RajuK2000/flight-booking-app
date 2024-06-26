@@ -6,6 +6,7 @@ import Offers from "./offers"
 import About from "./About"
 import HomePage from "./Home"
 import SignIn from "../Forms/signIn"
+import SignUp from "../Forms/signUp"
 
 const NavPath=()=>{
     return(
@@ -17,7 +18,8 @@ const NavPath=()=>{
             <Route path="/Contact" Component={Contact}/>
             <Route path="/Destinations" Component={Destinations}/>
             <Route path="*" Component={Error}/>  
-            <Route path="/login"  Component={SignIn}/>
+            <Route path="/signIn"  Component={SignIn}/>
+            <Route path="/signUp"  Component={SignUp}/>
         </Routes>
         </BrowserRouter>
     )

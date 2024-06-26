@@ -1,12 +1,53 @@
-.Container{
-    .text{
-        .err{
-            color: red;
-        }
-        .image{
-            height: 70vh;
-            width: 50vw;
-            border-radius: 40%;
-        }
+.ContainerEm {
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .text {
+        font-size: 100px;
+        font-family: cursive;
+        animation: text 2s linear infinite;
+    }
+    
+    .btnn {
+        margin: 50px;
+        font-family: cursive;
+        border: none;
+        font-size: 25px;
+        cursor: pointer;
+        padding: 10px;
+        animation: btns 2s linear infinite;
+    }
+    
+    .page {
+        margin: 5px;
+        font-size: 40px;
+        letter-spacing: 0.5rem;
+        font-family: cursive;
+    }
+    
+}
+@keyframes btns {
+    0% {
+        color: red;
+    }
+    50% {
+        color: black;
+    }
+    100% {
+        color: blue;
+    }
+}
+@keyframes text {
+    0% {
+       scale: .9;
+    }
+    50% {
+        color: black;
+    }
+    100% {
+        color: blue;
     }
 }

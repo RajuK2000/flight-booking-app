@@ -3,15 +3,18 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
+// import FormControlLabel from '@mui/material/FormControlLabel';
+// import Checkbox from '@mui/material/Checkbox';
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { Container, ThemeProvider, createTheme } from '@mui/material';
-import { blue } from '@mui/material/colors';
+// import { blue } from '@mui/material/colors';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../FireBase/fireBase-Conflicts';
+import { useNavigate } from 'react-router-dom';
 
 function Copyright(props) {
   return (
@@ -26,22 +29,50 @@ function Copyright(props) {
   );
 }
 
+
 const defaultTheme = createTheme();
 
 export default function SignUp() {
+
+  const [user,setUser]=React.useState({
+    email:null,
+    password:null,
+  })
+  const navigate=useNavigate()
+
+ const onchangeHandler=(e)=>{
+  const {name,value}=e.target
+  setUser({...user,[name]:value})
+ }
+
+ const handlesSignIn=()=>{
+  navigate("/signIn")
+ }
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      firstName: data.get('firstName'),
-      lastName: data.get('lastName'),
-      email: data.get('email'),
-      password: data.get('password'),
-    });
+  createUserWithEmailAndPassword(auth, user.email, user.password)
+  .then((userCredential) => {
+    // Signed up 
+    const user = userCredential.user;
+    localStorage.setItem("token",user.accessToken)
+    localStorage.setItem("user",JSON.stringify(user))
+    console.log(user)
+    navigate("/signIn")
+    alert("signUp succesfully!")
+    // ...
+  })
+  .catch((error) => {
+    // const errorCode = error.code;
+    // const errorMessage = error.message;
+     console.log(error) 
+     alert(error)   
+    // ..
+  });
   };
 
   return (
-    <div >
+    
     <ThemeProvider theme={defaultTheme} >
       <Container component="main" maxWidth="xs">
         <CssBaseline />
@@ -89,7 +120,9 @@ export default function SignUp() {
                   id="email"
                   label="Email Address"
                   name="email"
+                  value={user.email}
                   autoComplete="email"
+                  onChange={onchangeHandler}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -99,16 +132,18 @@ export default function SignUp() {
                   name="password"
                   label="Password"
                   type="password"
+                  value={user.password}
                   id="password"
                   autoComplete="new-password"
+                  onChange={onchangeHandler}
                 />
               </Grid>
-              <Grid item xs={12}>
+              {/* <Grid item xs={12}>
                 <FormControlLabel
                   control={<Checkbox value="allowExtraEmails" color="primary" />}
                   label="I want to receive inspiration, marketing promotions and updates via email."
                 />
-              </Grid>
+              </Grid> */}
             </Grid>
             <Button
               type="submit"
@@ -121,7 +156,7 @@ export default function SignUp() {
             <Grid container justifyContent="flex-end">
               <Grid item>
                 <Link href="#" variant="body2">
-                  Already have an account? Sign in
+                  {<p style={{fontSize:"16px",cursor:"pointer"}} onClick={handlesSignIn}>"Already have an account?"</p> }
                 </Link>
               </Grid>
             </Grid>
@@ -130,6 +165,6 @@ export default function SignUp() {
         <Copyright sx={{ mt: 5 }} />
       </Container>
     </ThemeProvider>
-    </div>
+
   );
 }
