@@ -1,26 +1,24 @@
 import { AiOutlineGlobal } from "react-icons/ai"
 import { BsPhoneVibrate } from "react-icons/bs"
 import { SiConsul, SiTurkishairlines } from "react-icons/si"
-// import flight from "../../Media/flight.png"
 import { CgMenuGridO } from "react-icons/cg"
 import "./navBar.scss"
 import { useContext, useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { FaUserCircle } from "react-icons/fa"
-// import SignIn from "../../Forms/signIn"
 import { signOut } from "firebase/auth"
 import { auth } from "../../FireBase/fireBase-Conflicts"
 import { Defaultprovider } from "../../Forms/signIn"
 
 
 const NavBar=()=>{
-const [active,setActive]=useState("navBarMenu")
+const [active,setActive] = useState(false)
+const signInnavigate = useNavigate()
 
 const userdata=localStorage.getItem("user")
 const data=JSON.parse(userdata)
 console.log(data)
 
-const signInnavigate=useNavigate()
 
 const handleLogout= async ()=>{
   console.log("kkk...")
@@ -29,13 +27,9 @@ const handleLogout= async ()=>{
   localStorage.removeItem("user")
   signInnavigate("/signIn")
 }
-
-   const showNavbar=()=>{
-    setActive("navBarMenu showNavBar")
-   }
-   const removeNavbar=()=>{
-    setActive("navBarMenu")
-   }
+const toggleNavbar=()=>{
+  setActive(!active)
+};
 
   //  const {user} = useContext(Defaultprovider)
   //  console.log(user)
@@ -66,28 +60,26 @@ const handleLogout= async ()=>{
 
         <div className="navBarTwo navbar_Bg">
           <div className="logoDiv">
-            {/* <img src={flight} alt="Flight" className="logo" /> */}
             <SiTurkishairlines className="logo"/>
           </div> 
          
-         <div className={active}>
+         <div className={`navBarMenu ${ active ? "showNavBar" : " "}`}>
           <ul className="menu">
-            <li onClick={removeNavbar} >
+            <li onClick={toggleNavbar} >
               <Link to="/" className="listItems">Home</Link></li>
-            <li onClick={removeNavbar} >
+            <li onClick={toggleNavbar} >
             <Link to="/Destinations" className="listItems">Destinations</Link></li>
-            <li onClick={removeNavbar}>
+            <li onClick={toggleNavbar}>
             <Link to="/Offers" className="listItems">Offers</Link>
             </li>
-            <li onClick={removeNavbar} >
+            <li onClick={toggleNavbar} >
             <Link to="/About" className="listItems">About</Link></li>
-            <li onClick={removeNavbar} >
+            <li onClick={toggleNavbar} >
             <Link to="/Contact" className="listItems">Contact</Link></li>
-            {/* <button className="btn flex btnOne">Contact</button> */}
           </ul>
           
           </div>
-         <div onClick={showNavbar} className="toggleIcon"><CgMenuGridO className="icon"/> </div>
+         <div onClick={toggleNavbar} className="toggleIcon"><CgMenuGridO className="icon"/> </div>
         </div>
        
 

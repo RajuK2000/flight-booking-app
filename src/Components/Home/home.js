@@ -1,6 +1,6 @@
 import takeOff from "../../Media/takeOff.png"
 import skyVideo from "../../Media/skyVideo.mp4"
-import "./home.css"
+import "./home.scss"
 import { useEffect } from "react"
 import Aos from "aos"
 import "aos/dist/aos.css"

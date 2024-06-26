@@ -77,7 +77,8 @@
         }
         }
     }
-    @media screen and (min-width:380px) {
+    
+@media screen and (min-width:380px) {
         .support{
             .sectionContainer{
                 .imgDiv{
@@ -110,8 +111,9 @@
                  
             }
         }   
-    }
-    @media screen and (min-width:570px) {
+}
+
+@media screen and (min-width:570px) {
         .support{
             .sectionContainer{
                 .imgDiv{
@@ -141,9 +143,9 @@
                    } 
             }
         }   
-    }
+}
 
-    @media screen and (min-width:760px) {
+@media screen and (min-width:760px) {
         .support{
             .sectionContainer{
                 .imgDiv{
@@ -179,9 +181,9 @@
                    } 
             }
         }   
-    }
+}
 
-    @media screen and (min-width:1202px) {
+@media screen and (min-width:1202px) {
         .support{
             .sectionContainer{
                 .imgDiv{
@@ -216,4 +218,4 @@
                    } 
             }
         }   
-    }
+}

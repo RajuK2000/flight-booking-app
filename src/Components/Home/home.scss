@@ -1,0 +1,99 @@
+.home{
+    z-index: -1;
+    text-align: center;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+    .mainText{
+      color: black;
+      font-size: 15px;
+      line-height: 2rem;
+      padding: 0rem 1rem;
+  }
+  .homeImages{
+    z-index: -1;
+    margin: .5rem auto 0;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    width: 100%;
+    .videoDiv{
+      width: 90%; 
+      .video{
+        height: 15rem;
+        border-radius: 30rem;
+     } 
+  }
+  .plan{
+    position: absolute;
+ }
+}
+}
+
+ @media screen and (min-width:320px){
+  .home{
+    .homeImages{
+      .plan{
+        position: absolute;
+        width:90%;
+      }
+    }
+  }
+   
+ }
+
+  @media screen and (min-width:680px){  
+    .home{
+      .homeImages{
+        .videoDiv{
+          width: 80%;
+          .video{
+           height: 100%;
+           width: 100%;
+           } 
+         }
+         .plan{ 
+           width:80%;
+         }
+      }
+    }  
+    
+  }
+ 
+  @media screen and (min-width:960px){
+    .home{
+      .mainText{
+        padding-bottom:1.5rem;
+        font-size: 22px;
+        line-height: 4rem;
+      }
+    }
+  } 
+
+  @media screen and (min-width:1024px){ 
+    .home{
+      .mainText{
+        font-size: 25px;
+        line-height: 4rem;
+      }
+      .homeImages{
+        .videoDiv{
+          width: 900px;
+          height: 400px;
+          .video{
+            width: 100%;
+            object-fit: cover;
+            opacity: .9;
+          }
+        }
+        .plan{
+          width: 60%;
+        }
+      }
+    }
+  } 
+
+
+                

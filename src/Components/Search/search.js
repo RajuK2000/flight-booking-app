@@ -1,4 +1,4 @@
-import "./search.css"
+import "./search.scss"
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlinePersonPinCircle } from "react-icons/md";
 import { FaRegCalendarAlt } from "react-icons/fa";
@@ -174,7 +174,7 @@ const Search=()=>{
        <div className="search container section">
         <div  data-aos="fade-up" data-aos-duration="2500" className="sectionContainer">
 
-            <div className="btns flex">
+            <div className="btns">
                 <div className="singleBtn">
                     <span onClick={()=>{setClasses("economy")}}>Economy</span>
                 </div>

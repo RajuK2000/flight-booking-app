@@ -18,7 +18,6 @@ const Info=()=>{
 
                 <div data-aos="fade-up" data-aos-duration="2500" className="titleDiv flex">
                     <h2 className="head"><GiWorld />Travel to make memories all around the world<GiWorld /></h2>
-                    {/* <button data-aos="fade-left" data-aos-duration="2500" className="btn">View All</button> */}
                 </div>
 
                 <div className="cardsDiv">

@@ -34,7 +34,6 @@
         position: relative;
         bottom: 2.8rem;
        .Bar{
-        // border: 1px solid black;
         border-radius: 10px;
         background-color: rgba(220, 227, 235,0.8);
         padding: 1rem;
@@ -125,7 +124,7 @@
             height: 8rem; 
          }
 
-        #SpecialOffers,#BankOffers,#PaymentApps,#Flights-Offers,#HolidayOffers,#HotDeals{
+        #SpecialOffers,#BankOffers,#UPIOffers,#Flights-Offers,#HolidayOffers,#HotDeals{
             grid-template-columns: repeat(1,1fr);
             .cards{
                 width:80vw;
@@ -159,7 +158,7 @@
             height: 8rem; 
          }
 
-        #SpecialOffers,#BankOffers,#PaymentApps,#Flights-Offers,#HolidayOffers,#HotDeals{
+        #SpecialOffers,#BankOffers,#UPIOffers,#Flights-Offers,#HolidayOffers,#HotDeals{
             grid-template-columns: repeat(2,1fr);
             .cards{
                 width:45vw;
@@ -193,7 +192,7 @@
             height: 8rem; 
          }
 
-        #SpecialOffers,#BankOffers,#PaymentApps,#Flights-Offers,#HolidayOffers,#HotDeals{
+        #SpecialOffers,#BankOffers,#UPIOffers,#Flights-Offers,#HolidayOffers,#HotDeals{
             grid-template-columns: repeat(3,1fr);
             .cards{
                 width:32vw;

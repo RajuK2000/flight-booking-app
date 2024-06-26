@@ -14,7 +14,7 @@
    justify-content: center;
    align-items: center;
      .Subcontainer{
-        width:70%;
+        width:80%;
         display: flex;
         flex-direction: column;
         .summaryTag{
@@ -63,6 +63,7 @@
         font-size: 25px;
     }
     .Subcontainer{
+        width: 98%;
         .Para{
             .feedback{
                 flex-direction: column;

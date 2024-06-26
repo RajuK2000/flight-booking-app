@@ -37,7 +37,7 @@ const Language=()=>{
                   <div className="block2">
                 <div data-aos="fade-down" data-aos-duration="2500" className="singleGrid">
                         <span className="gridTitle"><u>Care on the flight</u></span>
-                    <p><b>Stay hydrated, move around periodically, use neck support, adjust air vents</b>, and <b>relax with entertainment</b> or <b>sleep.</b></p>
+                     <p><b>Stay hydrated, move around periodically, use neck support, adjust air vents</b>, and <b>relax with entertainment</b> or <b>sleep.</b></p>
                 </div>
 
                 <div data-aos="fade-down" data-aos-duration="2500" className="singleGrid">

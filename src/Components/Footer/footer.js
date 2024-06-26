@@ -1,6 +1,5 @@
 import React from "react"
 import "./footer.scss"
-// import logo from "../../Media/flight.png"
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
@@ -22,7 +21,6 @@ const Footer=()=>{
             <div className="sectionContainer container grid">
                  <div data-aos="fade-down" data-aos-duration="2500" className="gridOne">
                     <div className="logoDiv">
-                        {/* <img src={logo} className="Logo" alt=""/> */}
                         <SiTurkishairlines className="Logo"/>
                     </div>
                     <p className="quote">Your mind should be stronger than your feelings,fly!</p>

@@ -19,7 +19,7 @@ const Subscribe=()=>{
                 <h2 className="head">Subcribe Newsletters & get Latest News</h2>
         
                     <form onSubmit={handleSubscribe} className="inputDiv flex">
-                    <input type="email" placeholder="Enter your email adress" required/>
+                    <input type="email" className="inp1" placeholder="Enter your email adress" required/>
                     <input type="submit" className="btns"/>
                     </form>
                 {
