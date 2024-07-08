@@ -1,0 +1,59 @@
+{
+  "FlightData":[
+    {
+        "id":1,
+        "FromCity":"Hyderabad",
+        "ToCity":"Mumbai",
+        "DepartureDate":"2024-07-10",
+        "ReturnDate":"2024-07-12",
+        "Adults": 1,
+        "Children": 0,
+        "Class":"business",
+        "price":3500 
+    },
+    {
+      "id":2,
+      "FromCity":"Hyderabad",
+      "ToCity":"Pune",
+      "DepartureDate":"2024-07-10",
+      "ReturnDate":"2024-07-12",
+      "Adults":1,
+      "Children":0,
+      "Class":"business",
+      "price":3000 
+  },
+  {
+    "id":3,
+    "FromCity":"Hyderabad",
+    "ToCity":"Delhi",
+    "DepartureDate":"2024-07-15",
+    "ReturnDate":"2024-07-20",
+    "Adults":"",
+    "Children":"",
+    "Class":"business",
+    "price":5000 
+},
+{
+  "id":4,
+  "FromCity":"Chennai",
+  "ToCity":"Mumbai",
+  "DepartureDate":"2024-07-10",
+  "ReturnDate":"2024-07-12",
+  "Adults":1,
+  "Children":0,
+  "Class":"business",
+  "price":3000 
+},
+{
+  "id":5,
+  "FromCity":"Hyderabad",
+  "ToCity":"Pune",
+  "DepartureDate":"2024-07-10",
+  "ReturnDate":"2024-07-12",
+  "Adults":1,
+  "Children":0,
+  "Class":"business",
+  "price":3000 
+}
+]
+}

@@ -16,19 +16,6 @@ import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../FireBase/fireBase-Conflicts';
 import { useNavigate } from 'react-router-dom';
 
-function Copyright(props) {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="#">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
-
 
 const defaultTheme = createTheme();
 
@@ -57,17 +44,15 @@ export default function SignUp() {
     const user = userCredential.user;
     localStorage.setItem("token",user.accessToken)
     localStorage.setItem("user",JSON.stringify(user))
+    
     console.log(user)
     navigate("/signIn")
     alert("signUp succesfully!")
-    // ...
   })
   .catch((error) => {
-    // const errorCode = error.code;
-    // const errorMessage = error.message;
      console.log(error) 
      alert(error)   
-    // ..
+
   });
   };
 
@@ -138,12 +123,6 @@ export default function SignUp() {
                   onChange={onchangeHandler}
                 />
               </Grid>
-              {/* <Grid item xs={12}>
-                <FormControlLabel
-                  control={<Checkbox value="allowExtraEmails" color="primary" />}
-                  label="I want to receive inspiration, marketing promotions and updates via email."
-                />
-              </Grid> */}
             </Grid>
             <Button
               type="submit"
@@ -153,16 +132,15 @@ export default function SignUp() {
             >
               Sign Up
             </Button>
-            <Grid container justifyContent="flex-end">
-              <Grid item>
-                <Link href="#" variant="body2">
-                  {<p style={{fontSize:"16px",cursor:"pointer"}} onClick={handlesSignIn}>"Already have an account?"</p> }
+            <Grid container >
+              <Grid item >
+                <Link variant="body2">
+                  {<p style={{fontSize:"16px",cursor:"pointer"}} onClick={handlesSignIn}>Already have an account?</p> }
                 </Link>
               </Grid>
             </Grid>
           </Box>
         </Box>
-        <Copyright sx={{ mt: 5 }} />
       </Container>
     </ThemeProvider>
 

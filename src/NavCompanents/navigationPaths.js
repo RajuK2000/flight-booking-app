@@ -7,6 +7,7 @@ import About from "./About"
 import HomePage from "./Home"
 import SignIn from "../Forms/signIn"
 import SignUp from "../Forms/signUp"
+import FlightData from "./FlightData"
 
 const NavPath=()=>{
     return(
@@ -20,6 +21,7 @@ const NavPath=()=>{
             <Route path="*" Component={Error}/>  
             <Route path="/signIn"  Component={SignIn}/>
             <Route path="/signUp"  Component={SignUp}/>
+            <Route path="/Bookings" Component={FlightData}/>
         </Routes>
         </BrowserRouter>
     )

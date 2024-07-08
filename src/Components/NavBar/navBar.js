@@ -82,7 +82,6 @@ const toggleNavbar=()=>{
          <div onClick={toggleNavbar} className="toggleIcon"><CgMenuGridO className="icon"/> </div>
         </div>
        
-
       </div>
         
     )

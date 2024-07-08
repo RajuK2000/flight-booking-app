@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     
     .text {
         font-size: 100px;
@@ -28,6 +29,11 @@
         font-family: cursive;
     }
     
+}
+@media screen and (max-width:520px) {
+    .ContainerEm{
+        margin-top: 15vh;
+    }
 }
 @keyframes btns {
     0% {

@@ -4,8 +4,8 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
+// import FormControlLabel from '@mui/material/FormControlLabel';
+// import Checkbox from '@mui/material/Checkbox';
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
@@ -16,20 +16,8 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../FireBase/fireBase-Conflicts';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import { createContext } from 'react';
+// import { createContext } from 'react';
 
-function Copyright(props) {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="#">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
 
 // TODO remove, this demo shouldn't need to reset the theme.
 
@@ -65,12 +53,9 @@ export default function SignIn() {
     alert("user login sucessfully")
     localStorage.setItem("token",user.accessToken)
     localStorage.setItem("user",JSON.stringify(user))
-    // ...
     navigate("/")
   })
   .catch((error) => {
-    // const errorCode = error.code;
-    // const errorMessage = error.message;
     alert(error.message)
   });
   };
@@ -119,10 +104,10 @@ export default function SignIn() {
               autoComplete="current-password"
               onChange={onchangeHandler}
             />
-            <FormControlLabel
+            {/* <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
-            />
+            /> */}
             <Button
               type="submit"
               fullWidth
@@ -132,22 +117,16 @@ export default function SignIn() {
               Sign In
             </Button>
             <Grid container>
-              <Grid item xs>
-                <Link href="#" variant="body2">
-                  Forgot password?
-                </Link>
-              </Grid>
-              <Grid item>
+              <Grid item >
                 <Link variant="body2" to="/signUp">
-                  {<p style={{fontSize:"16px",cursor:"pointer"}} onClick={signInnavigate}>"Don't have an account? Sign Up"</p>}
+                  {<p style={{fontSize:"16px",cursor:"pointer"}} onClick={signInnavigate}>Don't have an account? Sign Up</p>}
                 </Link>
               </Grid>
             </Grid>
           </Box>
         </Box>
-        <Copyright sx={{ mt: 5, mb: 2 }} />
       </Container>
     </ThemeProvider>
-    // </Defaultprovider.Provider>
+    //  </Defaultprovider.Provider>
   );
 }
